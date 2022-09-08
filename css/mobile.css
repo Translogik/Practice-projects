@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Cera Pro';
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+.header{
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 0px 17px;
+    margin-bottom: 23px;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+.logo{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    bottom: 12px;
+    margin-right: auto;
+    width: calc(100% - 120px);
+}
+.logo::before{
+    content: "";
+    display: inline-block;
+    background: url("../icons/Logo.png");
+    position: relative;
+    height: 44px;
+    width: 44px;
+    background-size: contain;
+    top: 15px;
+    right: 6px;
+}
+.circle-call{
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    background: #57AB27;
+    margin-right: 29px;
+    position: relative;
+}
+.circle-call_item{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 19px;
+}
+.menu-mob{
+    width: 29px;
+    height: 24px;
+}
+.hidden-menubar{
+    display: none;
+}
+.hidden-menu{
+    display: none;
+    position: relative;
+    top: -40px;
+}
+.menu-list__item{
+    font-weight: 500;
+    font-size: 15px;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    height: 20px;
+    padding: 10px;
+}
+.menu-mob_hidden:checked ~ .hidden-menu{
+    display: block;
+    position: relative;
+    right: 40%;
+    top: 0;
+}
+.menu-mob_hidden{
+    display: none;
+}
+.first-screen{
+    background: url("../images/Back-1.jpg");
+    height: 509px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 50% left 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 25px 50px 25px;
+}
+.green{
+    color: #57AB27;
+}
+.first-screen__title{
+    font-size: 2.4rem;
+    margin-bottom: 23px;
+}
+.action{
+    background: white;
+    border-radius: 2px;
+    font-size: 1.6rem;
+    padding: 23px;
+    position: relative;
+    width: 224px;
+}
+.action__calc{
+    position: absolute;
+    right: 30px;
+}
+.gain{
+    width: 263px;
+    height: 85px;
+    background: #57AB27;
+    color: white;
+    font-size: 2.2rem;
+    border-radius: 3px;
+    margin-top: auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+.gain p{
+    line-height: 1.5rem;
+    margin-top: 20px;
+}
+.regular{
+    font-weight: 400;
+}
+.small{
+    font-size: 1.4rem;
+}
+.bonus{
+    padding: 0 20px;
+    background: white;
+    height: 50px;
+    display: flex;
+}
+.bonus__img{
+    margin: auto;
+    position: relative;
+    top: -60px;
+}
+.advantage{
+    padding: 40px 20px;
+}
