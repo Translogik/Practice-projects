@@ -2,9 +2,6 @@
     margin: 0;
     padding: 0;
 }
-th{
-    
-}
 html{
     font-size: 62.5%;
 }
@@ -24,11 +21,23 @@ body{
 .small{
     font-size: 1.4rem;
 }
+.fz15{
+    font-size: 1.5rem;
+}
+.fz16{
+    font-size: 1.6rem;
+}
 .op8{
     opacity: 0.8;
 }
+.fw400{
+    font-weight: 400;
+}
 .green{
     color: #57AB27;
+}
+.grey{
+    color: #818387;
 }
 .header{
     display: flex;
@@ -118,7 +127,6 @@ body{
 .action{
     background: white;
     border-radius: 2px;
-    font-size: 1.6rem;
     padding: 23px;
     position: relative;
     width: 224px;
@@ -250,9 +258,6 @@ body{
 .goods__name{
     font-size: 1.8rem;
 }
-.goods__size{
-    font-size: 1.6rem;
-}
 .goods__description{
     font-weight: 400;
     font-size: 1.5rem;
@@ -262,12 +267,7 @@ body{
 .goods-table{
     text-align: left;
 }
-.goods-table-line{
-    font-size: 1.6rem;
-}
 .goods-table-line_first{
-    font-weight: 400;
-    font-size: 1.4rem;
     opacity: 0.6;
 }
 .goods-table-line_cell{
@@ -287,9 +287,6 @@ body{
     position: relative;
     padding: 17px 0px 0px 25px;
 }
-.button-order_txt{
-    font-size: 1.6rem;
-}
 .button-order__img{
     position: absolute;
     right: 25px;
@@ -298,6 +295,8 @@ body{
 .calculator{
     background: #57AB27;
     padding: 40px 20px 60px;
+    display: flex;
+    flex-direction: column;
 }
 .calculator__title{
     color: white;
@@ -306,4 +305,137 @@ body{
 .calculator-enter{
     background: white;
     border-radius: 3px;
+    padding: 5px 25px 35px;
+    width: 230px;
+    margin: auto;
+}
+.calculator-enter-block{
+    margin-top: 20px;
+    position: relative;
+}
+.calculator-enter-block__name{
+    padding-bottom: 10px;
+}
+.calculator-enter-block-field{
+    position: relative;
+}
+.calculator-enter-block-field__input{
+    border-radius: 2px;
+    background: #F0F2F6;
+    border: none;
+    box-sizing: border-box;
+    padding: 12px 25px;
+    width: 232px;
+    height: 54px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-weight: 400;
+    font-family: 'Cera Pro';
+}
+.calculator-enter-block-field__measure{
+    position: absolute;
+    left: 190px;
+    top: 17px;
+}
+.calculator-enter-block_last{
+    display: inline-block;
+    margin-right: 25px;
+}
+.calculator-enter-block_last:last-child{
+    margin-right: 0;
+}
+.calculator-enter-block-field_button{
+    font-weight: 500;
+    font-size: 1.6rem;
+    border: none;
+    background: white;
+}
+.calculator-enter-block-field__icon{
+    margin-right: 5px;
+}
+.calculator-result{
+    color: white;
+    width: 280px;
+    margin: auto;
+}
+.calculator-result__title{
+    margin: 40px 0px 20px;
+}
+.calculator-result-content td:first-child{
+    font-weight: 400;
+}
+.calculator-result-content td:last-child{
+    text-align: right;
+    padding-left: 20px;
+}
+.calculator-result-total{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 25px 25px 30px;
+    background: rgba(25, 26, 28, 0.6);
+    border-radius: 3px;
+}
+.calculator-result-total-content{
+    display: flex;
+    align-items: baseline;
+    padding-bottom: 15px;
+}
+.calculator-result-total-content__numbers{
+    margin-left: auto;
+}
+.calculator-result-total__button{
+    font-weight: 700;
+    font-family: 'Cera Pro';
+    width: 232px;
+    height: 60px;
+}
+.delivery{
+    padding-top: 40px;
+}
+.delivery__title{
+    padding-left: 20px;
+}
+.delivery__description{
+    padding: 20px 20px 35px;
+}
+.delivery-contacts{
+    padding: 30px 20px;
+    background: #57AB27;
+    color: white;
+    position: relative;
+    font-size: 1.8rem;
+}
+.delivery-contacts__img{
+    position: absolute;
+}
+.delivery-contacts-location{
+    position: relative;
+    padding-left: 110px;
+    margin-bottom: 20px;
+}
+.delivery-contacts-tel{
+    position: relative;
+    padding-left: 110px;
+}
+.delivery-contacts-location__img{
+    position: absolute;
+    left: 85px;
+    top: 15px;
+}
+.delivery-contacts-tel__img{
+    position: absolute;
+    left: 85px;
+    top: 5px;
+}
+.delivery-contacts__button{
+    font-family: inherit;
+    border: none;
+    background: #191A1C;
+    color: white;
+    width: 280px;
+    height: 60px;
+    margin-top: 40px;
+    border-radius: 2px;
 }

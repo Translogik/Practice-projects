@@ -33,7 +33,7 @@
 <div class="first-screen">
    <div class="first-screen__title"><p><span class="green">Арболитовые блоки</span>
     для строительства теплоэффективного и экологически чистого дома</p></div>
-   <a href="s" class="link"><div class="action">Рассчитать стоимость <img src="icons/Calc.svg" alt="Значок калькулятора" class="action__calc"></div></a>
+   <a href="s" class="link"><div class="action fz16">Рассчитать стоимость <img src="icons/Calc.svg" alt="Значок калькулятора" class="action__calc"></div></a>
    <div class="gain"><p>на 30% выгоднее</p>
     <span class="regular small op8">цена строительcтва из арболита</span></div>
 </div>
@@ -135,11 +135,11 @@
     <section class="goods">
         <img src="images/Unit-1.png" alt="" class="goods__img">
         <div class="goods__name">Стеновой блок</div>
-        <div class="goods__size green">500x200x300 мм</div>
+        <div class="goods__size green fz16">500x200x300 мм</div>
         <div class="goods__description">Применяется в индивидуальном строительстве для возведения несущих стен частного дома или коттеджа</div>
         <div class="goods-table">
             <table class="goods-table-self">
-                <tr class="goods-table-line goods-table-line_first">
+                <tr class="goods-table-line goods-table-line_first fz16 fw400">
                     <th class="goods-table-line_cell">135 ₽/шт.</td>
                     <th class="goods-table-line_cell">Вес 1 шт.</td>
                     <th class="goods-table-line_cell">в 1 м<sup>3</sup></td>
@@ -153,7 +153,7 @@
         </div>
         <a href="" class="link">
             <div class="button-order">
-                <div class="button-order_txt">Заказать</div>
+                <div class="button-order_txt fz16">Заказать</div>
                 <img src="icons/Arrow.svg" alt="" class="button-order__img">
             </div>
         </a>
@@ -161,12 +161,12 @@
     <section class="goods">
         <img src="images/Unit-2.png" alt="" class="goods__img">
         <div class="goods__name">Перегородочный блок</div>
-        <div class="goods__size green">500x300x140 мм</div>
+        <div class="goods__size green fz16">500x300x140 мм</div>
         <div class="goods__description">Применяется в индивидуальном строительстве для возведения перегородок внутри дома и для стен  построек без серъезных нагрузок.
         </div>
         <div class="goods-table">
             <table class="goods-table-self">
-                <tr class="goods-table-line goods-table-line_first">
+                <tr class="goods-table-line goods-table-line_first fz16 fw400">
                     <th class="goods-table-line_cell">135 ₽/шт.</td>
                     <th class="goods-table-line_cell">Вес 1 шт.</td>
                     <th class="goods-table-line_cell">в 1 м<sup>3</sup></td>
@@ -180,7 +180,7 @@
         </div>
         <a href="" class="link">
             <div class="button-order">
-                <div class="button-order_txt">Заказать</div>
+                <div class="button-order_txt fz16">Заказать</div>
                 <img src="icons/Arrow.svg" alt="" class="button-order__img">
             </div>
         </a>
@@ -188,17 +188,17 @@
     <section class="goods">
         <img src="images/Unit-3.png" alt="" class="goods__img">
         <div class="goods__name">Блок U-образный</div>
-        <div class="goods__size green">500×200×300 мм</div>
+        <div class="goods__size green fz16">500×200×300 мм</div>
         <div class="goods__description">Применяется для устройства дверных и оконных перемычек, заливки армопоясов под плиты перекрытия
         </div>
         <div class="goods-table">
             <table class="goods-table-self">
-                <tr class="goods-table-line goods-table-line_first">
+                <tr class="goods-table-line goods-table-line_first fz16 fw400">
                     <th class="goods-table-line_cell">150 ₽/шт.</td>
                     <th class="goods-table-line_cell">Вес 1 шт.</td>
                     <th class="goods-table-line_cell">в 1 м<sup>3</sup></td>
                 </tr>
-                <tr class="goods-table-line">
+                <tr class="goods-table-line fz16">
                     <td class="goods-table-line_cell">140 ₽/шт.</td>
                     <td class="goods-table-line_cell">14 кг</td>
                     <td class="goods-table-line_cell">33 шт.</td>
@@ -207,7 +207,7 @@
         </div>
         <a href="" class="link">
             <div class="button-order">
-                <div class="button-order_txt">Заказать</div>
+                <div class="button-order_txt fz16">Заказать</div>
                 <img src="icons/Arrow.svg" alt="" class="button-order__img">
             </div>
         </a>
@@ -217,13 +217,127 @@
     <div class="calculator__title">
         Калькулятор расчета строительных блоков
     </div>
-    <div class="calculator-enter">
-
-    </div>
+    <form action="index.html" method="post" class="calculator-enter">
+        <div class="calculator-enter-block">
+            <div class="calculator-enter-block__name fz16">Размер блока (Д*Ш*В)</div>
+            <div class="calculator-enter-block-field">
+                <select name="sizes" id="" class="calculator-enter-block-field__input fz15">
+                <option>500х300х200 мм</option>
+                <option>500x200x300 мм</option>
+                <option>500x300x140 мм</option>
+                </select>
+                <div class="calculator-enter-block-field__measure fz15 green"><img src="icons/Down.svg" alt=""></div>
+            </div>
+        </div>
+        <div class="calculator-enter-block">
+            <div class="calculator-enter-block__name fz16">Периметр стен</div>
+            <div class="calculator-enter-block-field">
+                <input type="text" class="calculator-enter-block-field__input fz15" placeholder="0" pattern="[0-9]" required>
+                <div class="calculator-enter-block-field__measure fz15 green">м.</div>
+            </div>
+        </div>
+        <div class="calculator-enter-block">
+            <div class="calculator-enter-block__name fz16">Высота стен</div>
+                <div class="calculator-enter-block-field">
+                <input type="text" class="calculator-enter-block-field__input fz15" placeholder="0" pattern="[0-9]" required>
+                <div class="calculator-enter-block-field__measure fz15 green">м.</div>
+            </div>
+        </div>
+        <div class="calculator-enter-block">
+            <div class="calculator-enter-block__name fz16">Толщина раствора</div>
+            <div class="calculator-enter-block-field">
+                <input type="text" class="calculator-enter-block-field__input fz15" placeholder="0" pattern="[0-9]" required>
+                <div class="calculator-enter-block-field__measure fz15 green">мм.</div>
+            </div>
+        </div>
+        <div class="calculator-enter-block">
+            <div class="calculator-enter-block__name fz16">Толщина стен</div>
+            <div class="calculator-enter-block-field">
+                <select name="sizes" id="" class="calculator-enter-block-field__input fz15">
+                <option>Один блок</option>
+                <option>Два блока</option>
+                <option>Три блока</option>
+                </select>
+                <div class="calculator-enter-block-field__measure fz15 green"><img src="icons/Down.svg" alt=""></div>
+            </div>
+        </div>
+        <div class="calculator-enter-block calculator-enter-block_last">
+            <div class="calculator-enter-block__name fz16">Окна и двери</div>
+            <div class="calculator-enter-block-field">
+                <button type="menu" class="calculator-enter-block-field_button grey"><img src="icons/Plus.svg" alt="" class="calculator-enter-block-field__icon">Добавить</button>
+            </div>
+        </div>
+        <div class="calculator-enter-block calculator-enter-block_last">
+            <div class="calculator-enter-block__name fz16">Фронтоны</div>
+            <div class="calculator-enter-block-field">
+                <button type="menu" class="calculator-enter-block-field_button green"><img src="icons/Edit.svg" alt="" class="calculator-enter-block-field__icon">Изменить</button>
+            </div>
+        </div>
+    </form>
     <div class="calculator-result">
-
+        <div class="calculator-result__title">Результаты расчета</div>
+        <table class="calculator-result-content fz15">
+            <tr>
+                <td>Объем одного блока</td>
+                <td>0.035 м<sup>3</sup></td>
+            </tr>
+            <tr>
+                <td>Количество блоков в кубе</td>
+                <td>29 шт./м<sup>3</sup></td>
+            </tr>
+            <tr>
+                <td>Рядов</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>Площадь стен</td>
+                <td>25 м<sup>2</sup></td>
+            </tr>
+            <tr>
+                <td>Площадь проемов</td>
+                <td>0 м<sup>2</sup></td>
+            </tr>
+            <tr>
+                <td>Площадь фронтонов</td>
+                <td>0 м<sup>2</sup></td>
+            </tr>
+            <tr>
+                <td>Общая площадь</td>
+                <td>25 м<sup>2</sup></td>
+            </tr>
+            <tr>
+                <td>Объем</td>
+                <td>8750 м<sup>3</sup></td>
+            </tr>
+        </table>
+        <div class="calculator-result-total">
+            <div class="calculator-result-total-content">
+                <div class="calculator-result-total-content__description fz15 fw400">Итого нужно:</div>
+                <div class="calculator-result-total-content__numbers">302 шт.</div>
+            </div>
+            <button class="calculator-result-total__button fz16">Сделать заказ</button>
+        </div>
     </div>
-    <div class="calculator-total"></div>
+</div>
+<div class="delivery">
+    <div class="delivery__title">Доставка</div>
+    <div class="delivery__description fz16">Расчет доставки производится индивидуально в зависитмости от типа автомобиля и расстояния.
+        <br><br>Так же возможен самовывоз</div>
+    <div class="delivery-contacts">
+        <img src="images/Unit-4-mob.png" alt="" class="delivery-contacts__img">
+        <div class="delivery-contacts-location">
+            <img src="icons/Place.svg" alt="" class="delivery-contacts-location__img">
+            <p>Оренбург, </p><p>Энергетиков 18</p>
+        </div>
+        <div class="delivery-contacts-tel">
+            <img src="icons/Call.svg" alt="" class="delivery-contacts-tel__img">
+            +7 (922) 543 24 60
+        </div>
+        <button class="delivery-contacts__button fz16">Закажите обратный звонок</button>
+    </div>
+    <map name="" class="delivery-map">
+        
+    </map>
 </div>
 </main>
 <footer class="footer">
