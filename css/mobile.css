@@ -18,9 +18,13 @@ h2{
     font-size: inherit;
 }
 
-input, button, select{
+input, button, select, textarea{
     font-size: inherit;
     font-family: inherit;
+    border: none;
+}
+button{
+    cursor: pointer;
 }
 .link{
     text-decoration: none;
@@ -32,6 +36,9 @@ input, button, select{
 .fz16{
     font-size: 1.6rem;
 }
+.fz18{
+    font-size: 1.8rem;
+}
 .op8{
     opacity: 0.8;
 }
@@ -40,6 +47,15 @@ input, button, select{
 }
 .grey{
     color: #818387;
+}
+.por{
+    position: relative;
+}
+.poa{
+    position: absolute;
+}
+.line{
+    text-decoration: underline;
 }
 .header{
     display: flex;
@@ -50,16 +66,16 @@ input, button, select{
     flex-wrap: wrap;
 }
 .logo{
-    position: relative;
-    bottom: 12px;
     margin-right: auto;
     width: calc(100% - 120px);
+    bottom: 12px;
+    font-size: 2.4rem;
 }
-.logo h1::before{
+.logo b::before{
     content: "";
-    display: inline-block;
-    background: url("../icons/Logo.png");
     position: relative;
+    display: inline-block;
+    background: url(../icons/Logo.png);
     height: 44px;
     width: 44px;
     background-size: contain;
@@ -72,10 +88,8 @@ input, button, select{
     border-radius: 100%;
     background: #57AB27;
     margin-right: 29px;
-    position: relative;
 }
-.circle-call_item{
-    position: absolute;
+.circle-call__icon{
     top: 12px;
     left: 12px;
     width: 19px;
@@ -83,13 +97,13 @@ input, button, select{
 .menu-mob__icon{
     width: 29px;
     height: 24px;
+    cursor: pointer;
 }
 .menubar{
     display: none;
 }
 .mob-menu{
     display: none;
-    position: relative;
     top: -40px;
 }
 .mob-menu__item{
@@ -129,11 +143,9 @@ input, button, select{
     background: white;
     border-radius: 2px;
     padding: 23px;
-    position: relative;
     width: 224px;
 }
 .action__calc{
-    position: absolute;
     right: 30px;
     top: 23px;
 }
@@ -157,7 +169,6 @@ input, button, select{
 }
 .bonus__img{
     margin: auto;
-    position: relative;
     top: -60px;
 }
 .advantage{
@@ -215,6 +226,9 @@ input, button, select{
     padding: 20px;
     max-height: 50px;
 }
+.table-header:last-child{
+    padding-left: 21px;
+}
 .table-line:nth-child(even){
     background: rgba(255, 255, 255, 0.3);
 }
@@ -242,14 +256,12 @@ input, button, select{
     padding-left: 0px 0px 10px 10px;
 }
 .goods{
-    position: relative;
     margin-top: 60px;
     padding: 100px 30px 33px;
     background: rgba(240, 242, 246, 0.4);
     border-radius: 3px;
 }
 .goods__img{
-    position: absolute;
     top: -41px;
     left: 18px;
 }
@@ -280,11 +292,12 @@ input, button, select{
     width: 162px;
     height: 52px;
     box-sizing: border-box;
-    position: relative;
-    padding: 15px 0px 0px 25px;
+    padding-left: 25px;
+}
+.button-order__txt{
+    text-align: left;
 }
 .button-order__img{
-    position: absolute;
     right: 25px;
     bottom: 18px;
 }
@@ -307,18 +320,13 @@ input, button, select{
 }
 .calculator-enter-block{
     margin-top: 20px;
-    position: relative;
 }
 .calculator-enter-block__name{
     padding-bottom: 10px;
 }
-.calculator-enter-block-field{
-    position: relative;
-}
 .calculator-enter-block-field__input{
     border-radius: 2px;
     background: #F0F2F6;
-    border: none;
     box-sizing: border-box;
     padding: 12px 25px;
     width: 232px;
@@ -342,7 +350,6 @@ input, button, select{
 .calculator-enter-block-field_button{
     font-weight: 500;
     font-size: 1.6rem;
-    border: none;
     background: white;
 }
 .calculator-enter-block-field__icon{
@@ -385,11 +392,12 @@ input, button, select{
     width: 232px;
     height: 60px;
     background: white;
-    border: none;
     border-radius: 2px;
 }
 .delivery{
     padding-top: 40px;
+    display: flex;
+    flex-direction: column;
 }
 .delivery__title{
     padding-left: 20px;
@@ -401,33 +409,25 @@ input, button, select{
     padding: 30px 20px;
     background: #57AB27;
     color: white;
-    position: relative;
     font-size: 1.8rem;
 }
-.delivery-contacts__img{
-    position: absolute;
-}
 .delivery-contacts-location{
-    position: relative;
     padding-left: 110px;
     margin-bottom: 20px;
 }
 .delivery-contacts-tel{
-    position: relative;
     padding-left: 110px;
 }
 .delivery-contacts-location__img{
-    position: absolute;
     left: 85px;
     top: 15px;
 }
 .delivery-contacts-tel__img{
-    position: absolute;
     left: 85px;
     top: 5px;
 }
 .delivery-contacts__button{
-    border: none;
+
     background: #191A1C;
     color: white;
     width: 280px;
@@ -436,10 +436,9 @@ input, button, select{
     border-radius: 2px;
 }
 .delivery-map{
-    position: relative;
+    margin: auto;
 }
 .delivery-map__icon{
-    position: absolute;
     left: 145px;
     top: 150px;
 }
@@ -452,11 +451,9 @@ input, button, select{
 .reviews-content{
     margin-top: 30px;
     padding: 40px 20px;
-    position: relative;
     background: rgba(240, 242, 246, 0.4);
 }
 .reviews-content__quotes{
-    position: absolute;
     top: -10px;
 }
 .reviews-content-caption{
@@ -467,10 +464,178 @@ input, button, select{
     font-size: 1.8rem;
 }
 .reviews-content-caption__photo{
-    position: absolute;
     left: 20px;
     bottom: 30px;
 }
-.delivery-contacts-tel__img{
-    fill: ;
+.feedback{
+    padding: 32px 20px;
+    background: url(../images/Back-mobile-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+.feedback-form{
+    padding: 25px 25px 40px;
+    border-radius: 2px;
+    background: white;
+    width: 230px;
+    margin: auto;
+}
+.feedback-form__description{
+    padding: 23px 0px 30px;
+}
+.feedback-form-location{
+    padding-left: 43px;
+}
+.feedback-form-location__img{
+    left: 0;
+}
+.feedback-form-tel{
+    padding: 20px 0px 20px 43px;
+}
+.feedback-form-tel__img{
+    left: 0;
+    top: 25px;
+}
+.feedback-form-email{
+    padding: 0px 0px 30px 43px;
+}
+.feedback-form-email__img{
+    left: 0;
+    top: 7px;
+}
+.feedback-form__name{
+    width: 212px;
+    height: 60px;
+    padding-left: 20px;
+    background: #F0F2F6;
+    border-radius: 2px;
+}
+.feedback-form__email{
+    width: 212px;
+    height: 60px;
+    padding-left: 20px;
+    background: #F0F2F6;
+    border-radius: 2px;
+    margin: 20px 0;
+}
+.feedback-form__area{
+    padding: 25px 0 0 20px;
+    background: #F0F2F6;
+    border-radius: 2px;
+    max-width: 212px;
+    min-width: 100px;
+    min-height: 100px;
+}
+.feedback-form-agree__check{
+    visibility: hidden;
+}
+.feedback-form-agree{
+    font-size: 1.3rem;
+    margin: 20px 0 20px;
+}
+.feedback-form-agree-block{
+    cursor: pointer;
+}
+.feedback-form-agree-block__icon{
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background: #F0F2F6;
+    border-radius: 2px;
+}
+.feedback-form-agree-block__icon-in{
+    display: none;
+    width: 12px;
+    height: 12px;
+    background: #57AB27;
+    border-radius: 1px;
+    top: 9px;
+    left: 4px;
+}
+.feedback-form-agree-block__txt{
+    margin-left: 40px;
+}
+.feedback-form-agree__check:checked + .feedback-form-agree-block .feedback-form-agree-block__icon-in{
+    display: block;
+}
+.feedback-form__button{
+    width: 232px;
+    height: 60px;
+    text-align: center;
+    color: white;
+    background: #57AB27;
+    border-radius: 2px;
+}
+.footer{
+    background: #191A1C;
+    color: white;
+    padding-bottom: 65px;
+    display: flex;
+    flex-direction: column;
+}
+.social{
+    padding: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+}
+.social-tel__img{
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    background: #57AB27;
+}
+.social-tel__img img{
+    width: 19px;
+    top: 12px;
+    left: 13px;
+}
+.social-tel__number{
+    padding-left: 60px;
+}
+.social-tel__timetable{
+    color: #818387;
+    padding-left: 60px;
+    font-size: 1.4rem;
+}
+.social-icons{
+    padding-left: 35px;
+    margin-top: 25px;
+}
+.social-icons__item{
+    display: inline-block;
+    margin-right: 20px;
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    background: white;
+    text-align: center;
+    padding-top: 13px;
+    box-sizing: border-box;
+}
+.social-icons__item_telega{
+    text-align: left;
+    padding-left: 12px;
+}
+.info{
+    padding: 50px 20px 35px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.info-logo{
+    padding-left: 45px;
+    text-align: center;
+    color: inherit;
+    font-size: 3rem;
+}
+.info__txt{
+    padding-top: 50px;
+    opacity: 0.3;
+}
+.info__license{
+    padding-left: 45px;
+    left: 66px;
+    bottom: -10px;
+    background: #191A1C;
+    width: calc(100% - 112px);
 }
