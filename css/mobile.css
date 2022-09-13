@@ -22,9 +22,15 @@ input, button, select, textarea{
     font-size: inherit;
     font-family: inherit;
     border: none;
+    color: inherit;
 }
 button{
     cursor: pointer;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 .link{
     text-decoration: none;
@@ -437,6 +443,10 @@ button{
 }
 .delivery-map{
     margin: auto;
+}
+.delivery-map__img{
+    width: 320px;
+    height: 385px;
 }
 .delivery-map__icon{
     left: 145px;
