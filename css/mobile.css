@@ -17,7 +17,9 @@ h1{
 h2{
     font-size: inherit;
 }
-
+address{
+    font-style: normal;
+}
 input, button, select, textarea{
     font-size: inherit;
     font-family: inherit;
@@ -35,6 +37,9 @@ input::-webkit-inner-spin-button {
 .link{
     text-decoration: none;
     color: black;
+}
+a{
+    text-decoration: none;
 }
 .small{
     font-size: 1.4rem;
@@ -73,9 +78,9 @@ input::-webkit-inner-spin-button {
 }
 .logo{
     margin-right: auto;
-    width: calc(100% - 120px);
     bottom: 12px;
     font-size: 2.4rem;
+    width: calc(100% - 120px);
 }
 .logo b::before{
     content: "";
@@ -110,22 +115,24 @@ input::-webkit-inner-spin-button {
 }
 .mob-menu{
     display: none;
-    top: -40px;
+    flex: 1;
+    margin-top: 20px;
 }
 .mob-menu__item{
+    display: block;
     font-weight: 500;
-    font-size: 15px;
-    list-style: none;
-    text-align: center;
-    text-decoration: none;
-    color: black;
+    font-size: 15px; 
+    color: white;
     height: 20px;
     padding: 10px;
+    text-align: center;
+    background:#57AB27;
+    margin: 5px 20px;
+    border-radius: 3px;
 }
 .menu-mob__input:checked ~ .mob-menu{
     display: block;
     position: relative;
-    right: 40%;
     top: 0;
 }
 .menu-mob__input{
@@ -299,6 +306,7 @@ input::-webkit-inner-spin-button {
     height: 52px;
     box-sizing: border-box;
     padding-left: 25px;
+    text-align: left;
 }
 .button-order__txt{
     text-align: left;
@@ -399,6 +407,7 @@ input::-webkit-inner-spin-button {
     height: 60px;
     background: white;
     border-radius: 2px;
+    color: black;
 }
 .delivery{
     padding-top: 40px;

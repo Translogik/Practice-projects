@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-<meta charset="UTF=8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie-edge">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link href="css/fonts.css" rel="stylesheet">
 <link href="css/mobile.css" rel="stylesheet">
 <title>Document</title>
@@ -23,13 +23,13 @@
 <label for="menu-mob">
 <img src="icons/Menu.svg" alt="Кнопка меню" class="menu-mob__icon">
 </label>
-<ul class="mob-menu por">
-    <a href="1" class="mob-menu__item"><li>О материале</li></a>
-    <a href="2" class="mob-menu__item"><li>Преимущества</li></a>
-    <a href="" class="mob-menu__item"><li>Отзывы</li></a>
-    <a href="" class="mob-menu__item"><li>FAQ</li></a>
-    <a href="" class="mob-menu__item"><li>Контакты</li></a>
-</ul>
+<nav class="mob-menu por">
+    <a href="1" class="mob-menu__item">О материале</a>
+    <a href="2" class="mob-menu__item">Преимущества</a>
+    <a href="3" class="mob-menu__item">Отзывы</a>
+    <a href="4" class="mob-menu__item">FAQ</a>
+    <a href="5" class="mob-menu__item">Контакты</a>
+</nav>
 </header>
 <main class="main">
 <div class="first-screen">
@@ -69,7 +69,6 @@
     </section>
     <section class="advantage-item"><img src="icons/saw.svg" alt="" class="advantage-item__img">
         <div class="advantage-item__title"><h2>Поддается обработке</h2></div>
-        <div class="advantage-item__content">Легко обрабатывается инструментами до придания нужной формы</div>
         <div class="advantage-item__content">Легко обрабатывается инструментами до придания нужной формы</div>
     </section>
     <section class="advantage-item"><img src="icons/Wall.svg" alt="" class="advantage-item__img">
@@ -155,8 +154,8 @@
                 </tr>
             </table>
         </div>
-            <button class="button-order por">
-                <div class="button-order__txt fz16"><h2>Заказать</h2></div>
+            <button class="button-order fz16 por">
+                <b>Заказать</b> 
                 <img src="icons/Arrow.svg" alt="" class="button-order__img poa">
             </button>
     </section>
@@ -179,8 +178,8 @@
                 </tr>
             </table>
         </div>
-            <button class="button-order por">
-                <div class="button-order__txt fz16"><h2>Заказать</h2></div>
+            <button class="button-order fz16 por">
+                <b>Заказать</b>
                 <img src="icons/Arrow.svg" alt="" class="button-order__img poa">
             </button>
     </section>
@@ -203,8 +202,8 @@
                 </tr>
             </table>
         </div>
-            <button class="button-order por">
-                <div class="button-order__txt fz16"><h2>Заказать</h2></div>
+            <button class="button-order fz16 por">
+                <b>Заказать</b>
                 <img src="icons/Arrow.svg" alt="" class="button-order__img poa">
             </button>
     </section>
@@ -228,21 +227,21 @@
         <div class="calculator-enter-block por">
             <div class="calculator-enter-block__name fz16"><h2>Периметр стен</h2></div>
             <div class="calculator-enter-block-field por">
-                <input type="number" class="calculator-enter-block-field__input" placeholder="0"" required>
+                <input type="number" class="calculator-enter-block-field__input" placeholder="0" required>
                 <div class="calculator-enter-block-field__measure green">м.</div>
             </div>
         </div>
         <div class="calculator-enter-block por">
             <div class="calculator-enter-block__name fz16"><h2>Высота стен</h2></div>
                 <div class="calculator-enter-block-field por">
-                <input type="number" class="calculator-enter-block-field__input" placeholder="0"" required>
+                <input type="number" class="calculator-enter-block-field__input" placeholder="0" required>
                 <div class="calculator-enter-block-field__measure green">м.</div>
             </div>
         </div>
         <div class="calculator-enter-block por">
             <div class="calculator-enter-block__name fz16"><h2>Толщина раствора</h2></div>
             <div class="calculator-enter-block-field por">
-                <input type="number" class="calculator-enter-block-field__input" placeholder="0"" required>
+                <input type="number" class="calculator-enter-block-field__input" placeholder="0" required>
                 <div class="calculator-enter-block-field__measure green">мм.</div>
             </div>
         </div>
@@ -260,13 +259,13 @@
         <div class="calculator-enter-block calculator-enter-block_last por">
             <div class="calculator-enter-block__name fz16"><h2>Окна и двери</h2></div>
             <div class="calculator-enter-block-field por">
-                <button type="menu" class="calculator-enter-block-field_button grey"><img src="icons/Plus.svg" alt="" class="calculator-enter-block-field__icon">Добавить</button>
+                <button type="button" class="calculator-enter-block-field_button grey"><img src="icons/Plus.svg" alt="" class="calculator-enter-block-field__icon">Добавить</button>
             </div>
         </div>
         <div class="calculator-enter-block calculator-enter-block_last por">
             <div class="calculator-enter-block__name fz16"><h2>Фронтоны</h2></div>
             <div class="calculator-enter-block-field por">
-                <button type="menu" class="calculator-enter-block-field_button green"><img src="icons/Edit.svg" alt="" class="calculator-enter-block-field__icon">Изменить</button>
+                <button type="button" class="calculator-enter-block-field_button green"><img src="icons/Edit.svg" alt="" class="calculator-enter-block-field__icon">Изменить</button>
             </div>
         </div>
     </form>
@@ -319,7 +318,7 @@
     <div class="delivery__title"><h1>Доставка</h1></div>
     <div class="delivery__description fz16"><p>Расчет доставки производится индивидуально в зависитмости от типа автомобиля и расстояния.
         <br><br>Так же возможен самовывоз</p></div>
-    <div class="delivery-contacts por">
+    <address class="delivery-contacts por">
         <img src="images/Unit-4-mob.png" alt="" class="delivery-contacts__img poa">
         <div class="delivery-contacts-location por">
             <img src="icons/Place.svg" alt="" class="delivery-contacts-location__img poa">
@@ -330,10 +329,10 @@
             <b>+7 (922) 543 24 60</b>
         </div>
         <button class="delivery-contacts__button fz16"><b>Закажите обратный звонок</b></button>
-    </div>
+    </address>
     <div class="delivery-map por">
     <map name="primary" class="delivery-map__primary">
-        <area shape="rect" coords="0,0,320,385" href="googlemaps.com">
+        <area shape="rect" coords="0,0,320,385" href="googlemaps.com" alt="s">
     </map>
     <img usemap="#primary" src="images/Map-mob.jpg" alt="map pic" class="delivery-map__img">
     <img src="icons/pin.svg" alt="" class="delivery-map__icon poa">
@@ -344,31 +343,31 @@
     <blockquote class="reviews-content por">
         <img src="icons/Quotes.svg" alt="" class="reviews-content__quotes poa">
         <p>Изучал, как правильно выбирать арболитовые блоки, на что обратить внимание. На рынке много производителей и это натолкнуло на мысль, что изготовление не сложное, а поэтому вполне доступное для предприимчивых умельцев. Чтобы избежать неприятностей в дальнейшем приобрел в «Арболите». Для отделки использовал фасадную штукатурку, хотя можно было и просто ПЦС. В общем, рекомендую</p>
-        <cite class="reviews-content-caption"><img src="images/photo.png" alt="" class="reviews-content-caption__photo poa"><b>Руслан Зиатдинов</b><p><time class="fz16">05.03.2021</time></p></cite>
+        <cite class="reviews-content-caption"><img src="images/photo.png" alt="" class="reviews-content-caption__photo poa"><b>Руслан Зиатдинов</b><br><time class="fz16">05.03.2021</time></cite>
     </blockquote>
     <blockquote class="reviews-content por">
         <img src="icons/Quotes.svg" alt="" class="reviews-content__quotes poa">
         <p>Изучал, как правильно выбирать арболитовые блоки, на что обратить внимание. На рынке много производителей и это натолкнуло на мысль, что изготовление не сложное, а поэтому вполне доступное для предприимчивых умельцев. Чтобы избежать неприятностей в дальнейшем приобрел в «Арболите». Для отделки использовал фасадную штукатурку, хотя можно было и просто ПЦС. В общем, рекомендую</p>
-        <cite class="reviews-content-caption"><img src="images/photo.png" alt="" class="reviews-content-caption__photo poa"><b>Руслан Зиатдинов</b><p><time class="fz16">05.03.2021</time></p></cite>
+        <cite class="reviews-content-caption"><img src="images/photo.png" alt="" class="reviews-content-caption__photo poa"><b>Руслан Зиатдинов</b><br><time class="fz16">05.03.2021</time></cite>
     </blockquote>
     <blockquote class="reviews-content por">
         <img src="icons/Quotes.svg" alt="" class="reviews-content__quotes poa">
         <p>Изучал, как правильно выбирать арболитовые блоки, на что обратить внимание. На рынке много производителей и это натолкнуло на мысль, что изготовление не сложное, а поэтому вполне доступное для предприимчивых умельцев. Чтобы избежать неприятностей в дальнейшем приобрел в «Арболите». Для отделки использовал фасадную штукатурку, хотя можно было и просто ПЦС. В общем, рекомендую</p>
-        <cite class="reviews-content-caption"><img src="images/photo.png" alt="" class="reviews-content-caption__photo poa"><b>Руслан Зиатдинов</b><p><time class="fz16">05.03.2021</time></p></cite>
+        <cite class="reviews-content-caption"><img src="images/photo.png" alt="" class="reviews-content-caption__photo poa"><b>Руслан Зиатдинов</b><br><time class="fz16">05.03.2021</time></cite>
     </blockquote>
 </div>
 <div class="feedback">
     <form action="" method="post" class="feedback-form">
         <div class="feedback-form__title"><h1>Спрашивайте!</h1></div>
         <div class="feedback-form__description"><p>Если у вас есть какие-либо вопросы, свяжитесь с нами любым удобным вам способом или закажите обратный звонок</p></div>
-        <div class="feedback-form-location fz18 por">
+        <address class="feedback-form-location fz18 por">
             <img src="icons/Place_green.svg" alt="" class="feedback-form-location__img poa">
             <p><b>Оренбург, </b></p><p><b>Энергетиков 18</b></p>
-        </div>
-        <div class="feedback-form-tel fz18 por">
+        </address>
+        <address class="feedback-form-tel fz18 por">
             <img src="icons/Call_green.svg" alt="" class="feedback-form-tel__img poa">
             <b>+7 (922) 543 24 60</b>
-        </div>
+        </address>
         <div class="feedback-form-email fz18 por">
             <img src="icons/Mail.svg" alt="" class="feedback-form-email__img poa">
             <a href="mailto:otvet@arbolita.ru"><b class="feedback-form-email__txt green line">otvet@arbolita.ru</b></a>
@@ -382,7 +381,7 @@
                 <div class="feedback-form-agree-block__icon poa"></div>
                 <div class="feedback-form-agree-block__icon-in poa"></div>
                 <div class="feedback-form-agree-block__txt"><p>Согласен на обработку <span class="line">персональных данных</span></p></div>
-            </label>
+            </label> 
         </div>
         <button class="feedback-form__button fz16"><b>Задать вопрос</b></button>
     </form>
@@ -403,7 +402,7 @@
         <div class="social-tel__timetable">9:00 - 18:00, без выходных</div>
     </div>
     <div class="social-icons">
-        <a href=""><div class="social-icons__item"><img src="icons/Instagram.svg" alt="""></div></a>
+        <a href=""><div class="social-icons__item"><img src="icons/Instagram.svg" alt=""></div></a>
         <a href=""><div class="social-icons__item social-icons__item_telega"><img src="icons/Telegram.svg" alt=""></div></a>
         <a href=""><div class="social-icons__item"><img src="icons/Tel.svg" alt=""></div></a>
     </div>
