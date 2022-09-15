@@ -451,15 +451,8 @@ a{
     border-radius: 2px;
 }
 .delivery-map{
-    margin: auto;
-}
-.delivery-map__img{
-    width: 320px;
-    height: 385px;
-}
-.delivery-map__icon{
-    left: 145px;
-    top: 150px;
+    width: 100%;
+    height: 120vw;
 }
 .reviews{
     padding: 40px 0px;

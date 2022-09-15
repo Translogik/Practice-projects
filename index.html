@@ -6,6 +6,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link href="css/fonts.css" rel="stylesheet">
 <link href="css/mobile.css" rel="stylesheet">
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="js/map.js" type="text/javascript"></script>
 <title>Document</title>
 </head>
 <body>
@@ -32,16 +34,16 @@
 </nav>
 </header>
 <main class="main">
-<div class="first-screen">
+<section class="first-screen">
    <div class="first-screen__title"><h1><span class="green">Арболитовые блоки</span>
     для строительства теплоэффективного и экологически чистого дома</h1></div>
    <a href="s" class="link"><div class="action fz16 por"><h2>Рассчитать стоимость</h2> <img src="icons/Calc.svg" alt="Значок калькулятора" class="action__calc poa"></div></a>
    <div class="gain"><p><strong>на 30% выгоднее</strong></p>
    <span class="small op8">цена строительcтва из арболита</span>
    </div>
-</div>
-<div class="bonus"><img src="images/Unit-0.png" alt="Блок" class="bonus__img por"></div>
-<div class="advantage">
+</section>
+<aside class="bonus"><img src="images/Unit-0.png" alt="Блок" class="bonus__img por"></aside>
+<section class="advantage">
     <h1>Преимущества <br><span class="green">арболита</span></h1>
     <section class="advantage-item"><img src="icons/Good.svg" alt="" class="advantage-item__img">
         <div class="advantage-item__title"><h2>Стандартизирован</h2></div>
@@ -75,8 +77,8 @@
         <div class="advantage-item__title"><h2>Экономичен</h2></div>
         <div class="advantage-item__content">Стоимость дома из арболита ощутимо ниже аналогов из кирпича</div>
     </section>
-</div>
-<div class="content-advantage">
+</section>
+<section class="content-advantage">
     <div class="content-advantage__title">
         <h1>Чем <span class="green">арболит лучше</span> других строительных материалов</h1>
     </div>
@@ -132,8 +134,8 @@
             </tr>
         </tbody>
     </table>
-</div>
-<div class="content">
+</section>
+<section class="content">
     <div class="content__title"><h1>Купить блоки</h1></div>
     <section class="goods por">
         <img src="images/Unit-1.png" alt="" class="goods__img poa">
@@ -207,8 +209,8 @@
                 <img src="icons/Arrow.svg" alt="" class="button-order__img poa">
             </button>
     </section>
-</div>
-<div class="calculator">
+</section>
+<section class="calculator">
     <div class="calculator__title">
         <h1>Калькулятор расчета строительных блоков</h1>
     </div>
@@ -313,8 +315,8 @@
             <button class="calculator-result-total__button fz16"><b>Сделать заказ</b></button>
         </div>
     </div>
-</div>
-<div class="delivery">
+</section>
+<section class="delivery">
     <div class="delivery__title"><h1>Доставка</h1></div>
     <div class="delivery__description fz16"><p>Расчет доставки производится индивидуально в зависитмости от типа автомобиля и расстояния.
         <br><br>Так же возможен самовывоз</p></div>
@@ -330,15 +332,9 @@
         </div>
         <button class="delivery-contacts__button fz16"><b>Закажите обратный звонок</b></button>
     </address>
-    <div class="delivery-map por">
-    <map name="primary" class="delivery-map__primary">
-        <area shape="rect" coords="0,0,320,385" href="googlemaps.com" alt="s">
-    </map>
-    <img usemap="#primary" src="images/Map-mob.jpg" alt="map pic" class="delivery-map__img">
-    <img src="icons/pin.svg" alt="" class="delivery-map__icon poa">
-    </div>
-</div>
-<div class="reviews">
+    <div class="delivery-map" id="map"></div>
+</section>
+<section class="reviews">
     <div class="reviews__title"><h1>Отзывы наших клиентов</h1></div>
     <blockquote class="reviews-content por">
         <img src="icons/Quotes.svg" alt="" class="reviews-content__quotes poa">
@@ -355,8 +351,8 @@
         <p>Изучал, как правильно выбирать арболитовые блоки, на что обратить внимание. На рынке много производителей и это натолкнуло на мысль, что изготовление не сложное, а поэтому вполне доступное для предприимчивых умельцев. Чтобы избежать неприятностей в дальнейшем приобрел в «Арболите». Для отделки использовал фасадную штукатурку, хотя можно было и просто ПЦС. В общем, рекомендую</p>
         <cite class="reviews-content-caption"><img src="images/photo.png" alt="" class="reviews-content-caption__photo poa"><b>Руслан Зиатдинов</b><br><time class="fz16">05.03.2021</time></cite>
     </blockquote>
-</div>
-<div class="feedback">
+</section>
+<section class="feedback">
     <form action="" method="post" class="feedback-form">
         <div class="feedback-form__title"><h1>Спрашивайте!</h1></div>
         <div class="feedback-form__description"><p>Если у вас есть какие-либо вопросы, свяжитесь с нами любым удобным вам способом или закажите обратный звонок</p></div>
@@ -385,7 +381,7 @@
         </div>
         <button class="feedback-form__button fz16"><b>Задать вопрос</b></button>
     </form>
-</div>
+</section>
 </main>
 <footer class="footer">
 <nav class="menubar">
@@ -395,7 +391,7 @@
     <div class="menubar__link">FAQ</div>
     <div class="menubar__link">Контакты</div>
 </nav>
-<div class="social">
+<aside class="social">
     <div class="social-tel por">
         <a href="tel:+79225432460"><div class="social-tel__img poa"><img src="icons/Call.svg" alt="" class="poa"></div></a>
         <div class="social-tel__number fz18"><b>+7 (922) 543 24 60</b></div>
@@ -406,12 +402,12 @@
         <a href=""><div class="social-icons__item social-icons__item_telega"><img src="icons/Telegram.svg" alt=""></div></a>
         <a href=""><div class="social-icons__item"><img src="icons/Tel.svg" alt=""></div></a>
     </div>
-</div>
-<div class="info por">
+</aside>
+<aside class="info por">
     <a href="/" class="info-logo logo link por"><b>Арболит</b></a>  
-    <div class="info__txt">Общество с ограниченной ответственностью «Арболит» Юридический адрес: ул. 9 Января, 62, Оренбург, Оренбургская обл., 460000 Фактический адрес: ул. 9 Января, 62, Оренбург, Оренбургская обл., 460000 ИНН/КПП: 771241238052/634501001 ОГРН: 51784446179434 Генеральный директор: Арболит Арболитов Арболит</div>
-    <div class="info__license poa"><img src="icons/Index.svg" alt=""></div>
-</div>
+    <address class="info__txt">Общество с ограниченной ответственностью «Арболит» Юридический адрес: ул. 9 Января, 62, Оренбург, Оренбургская обл., 460000 Фактический адрес: ул. 9 Января, 62, Оренбург, Оренбургская обл., 460000 ИНН/КПП: 771241238052/634501001 ОГРН: 51784446179434 Генеральный директор: Арболит Арболитов Арболит</address>
+    <aside class="info__license poa"><img src="icons/Index.svg" alt=""></aside>
+</aside>
 </footer>
 </body>
 </html>
