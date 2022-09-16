@@ -6,9 +6,7 @@ html{
     font-size: 62.5%;
 }
 body{
-    font-family: 'Cera Pro';
-    font-weight: 400;
-    font-size: 1.5rem;
+    font: 400 1.5rem 'Cera Pro', Arial, sans-serif;
     color: #191A1C;
 }
 h1{
@@ -190,9 +188,11 @@ a{
 .advantage-item{
     padding: 30px 14px 26px 84px;
 }
-.advantage-item__img{
+.advantage-item__block-img{
+    width: 43px;
     position: absolute;
     left: 42px;
+    text-align: center;
 }
 .advantage-item__title{
     font-size: 1.6rem;
@@ -242,7 +242,7 @@ a{
 .table-header:last-child{
     padding-left: 21px;
 }
-.table-line:nth-child(even){
+.table-line:nth-child(odd){
     background: rgba(255, 255, 255, 0.3);
 }
 .table-line:last-child{
@@ -266,7 +266,7 @@ a{
     padding: 35px 10px 40px;
 }
 .content__title{
-    padding-left: 0px 0px 10px 10px;
+    padding: 0px 0px 10px 10px;
 }
 .goods{
     margin-top: 60px;
@@ -452,7 +452,7 @@ a{
 }
 .delivery-map{
     width: 100%;
-    height: 120vw;
+    height: 100vh;
 }
 .reviews{
     padding: 40px 0px;
@@ -511,6 +511,9 @@ a{
 }
 .feedback-form-email{
     padding: 0px 0px 30px 43px;
+}
+.feedback-form-email__txt{
+    text-underline-position: under;
 }
 .feedback-form-email__img{
     left: 0;
@@ -632,7 +635,6 @@ a{
 }
 .info{
     padding: 50px 20px 35px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .info-logo{
     padding-left: 45px;
@@ -644,10 +646,22 @@ a{
     padding-top: 50px;
     opacity: 0.3;
 }
-.info__license{
+.footer__line{
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: visible;
+    text-align: right;
+}
+.footer__line::before{
+    content: "";
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    width: 79%;
+    height: 11px;
+    background: url(../icons/Index.svg), #191A1C;
+    background-repeat: no-repeat;
+    background-position-x: 45px;
+    top: 10px;
     padding-left: 45px;
-    left: 66px;
-    bottom: -10px;
-    background: #191A1C;
-    width: calc(100% - 112px);
 }

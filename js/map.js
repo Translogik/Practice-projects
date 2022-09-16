@@ -9,6 +9,8 @@ function init () {
    });
  myMap.behaviors
         .disable(['rightMouseButtonMagnifier', 'scrollZoom', 'ruler']); 
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+			 myMap.behaviors.disable('drag');};
 	myPlacemark2 = new ymaps.Placemark([51.768000828149475,55.0954161627027],{}, { 
 	iconLayout: 'default#image',
 	iconImageHref: 'icons/pin.svg',
