@@ -67,20 +67,19 @@ a{
     text-decoration: underline;
 }
 .header{
+    padding: 20px;
     display: flex;
     align-items: center;
-    padding: 20px 20px 0px 17px;
-    margin-bottom: 23px;
     justify-content: end;
     flex-wrap: wrap;
 }
 .logo{
+    font-size: 2.4rem;
+    width: calc(100% - 130px);
     margin-right: auto;
     bottom: 12px;
-    font-size: 2.4rem;
-    width: calc(100% - 120px);
 }
-.logo b::before{
+.logo::before{
     content: "";
     position: relative;
     display: inline-block;
@@ -90,6 +89,21 @@ a{
     background-size: contain;
     top: 15px;
     right: 6px;
+}
+.menubar{
+    display: flex;
+}
+.menu__item{
+    display: none;
+    padding: 10px;
+    margin-right: 25px;
+    color: inherit;
+}
+.location{
+    display: none;
+}
+.phone{
+    display: none;
 }
 .circle-call{
     width: 44px;
@@ -108,7 +122,10 @@ a{
     height: 24px;
     cursor: pointer;
 }
-.menubar{
+.menu-mob__input:checked ~ .mob-menu{
+    display: block;
+}
+.menu-mob__input{
     display: none;
 }
 .mob-menu{
@@ -127,14 +144,7 @@ a{
     background:#57AB27;
     margin: 5px 20px;
     border-radius: 3px;
-}
-.menu-mob__input:checked ~ .mob-menu{
-    display: block;
-    position: relative;
-    top: 0;
-}
-.menu-mob__input{
-    display: none;
+    order: 2;
 }
 .first-screen{
     background: url("../images/Back-1.jpg");
@@ -183,7 +193,10 @@ a{
     top: -60px;
 }
 .advantage{
-    padding: 40px 20px;
+    padding: 40px 0px;
+}
+.advantage h1{
+    margin-left: 20px;
 }
 .advantage-item{
     padding: 30px 14px 26px 84px;
@@ -191,7 +204,7 @@ a{
 .advantage-item__block-img{
     width: 43px;
     position: absolute;
-    left: 42px;
+    left: 22px;
     text-align: center;
 }
 .advantage-item__title{
@@ -224,6 +237,7 @@ a{
 .table{
     border-collapse: collapse;
     text-align: left;
+    table-layout: fixed;
 }
 .table-cell{
     position: relative;
@@ -237,16 +251,20 @@ a{
     font-size: 1.4rem;
     font-weight: 400;
     padding: 20px;
-    max-height: 50px;
-}
-.table-header:last-child{
-    padding-left: 21px;
+    min-width: 135px;
 }
 .table-line:nth-child(odd){
     background: rgba(255, 255, 255, 0.3);
 }
 .table-line:last-child{
     background: rgb(255, 255, 255);
+}
+.table-cell__void{
+    height: 68px;
+    display: inline-block;
+}
+.table-line th{
+    line-height: 4rem;
 }
 .table-cell__img{
     position: absolute;
@@ -265,12 +283,15 @@ a{
 .content{
     padding: 35px 10px 40px;
 }
+.content-call{
+    display: none;
+}
 .content__title{
     padding: 0px 0px 10px 10px;
 }
 .goods{
     margin-top: 60px;
-    padding: 100px 30px 33px;
+    padding: 98px 28px 33px;
     background: rgba(240, 242, 246, 0.4);
     border-radius: 3px;
 }
@@ -292,7 +313,7 @@ a{
     opacity: 0.6;
 }
 .goods-table-line_cell{
-    padding-right: 30px;
+    padding-right: 25px;
 }
 .goods-table-line_cell:last-child{
     padding-right: 0;
@@ -324,6 +345,7 @@ a{
 .calculator__title{
     color: white;
     margin-bottom: 30px;
+    width: 100%;
 }
 .calculator-enter{
     background: white;
@@ -486,12 +508,15 @@ a{
     background-repeat: no-repeat;
     display: flex;
 }
-.feedback-form{
+.feedback-shell{
     padding: 25px 25px 40px;
     border-radius: 2px;
     background: white;
     width: 230px;
     margin: auto;
+}
+.feedback-form{
+    
 }
 .feedback-form__description{
     padding: 23px 0px 30px;

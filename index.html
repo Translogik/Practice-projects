@@ -6,24 +6,27 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link href="css/fonts.css" rel="stylesheet">
 <link href="css/mobile.css" rel="stylesheet">
-<title>Document</title>
+<link href="css/table.css" rel="stylesheet" media="(min-width: 641px)">
+<title>First Adaptive Landing</title>
 </head>
 <body>
 <header class="header">
 <a href="/" class="logo link por"><b>Арболит</b></a>
-<nav class="menubar">
-    <div class="menubar__link">О материале</div>
-    <div class="menubar__link">Преимущества</div>
-    <div class="menubar__link">Отзывы</div>
-    <div class="menubar__link">FAQ</div>
-    <div class="menubar__link">Контакты</div>
-</nav>
-<a href="tel:+79225432460"><div class="circle-call por"><img src="icons/Call.svg" alt="Кнопка вызова" class="circle-call__icon poa"></div></a>
 <input type="checkbox" id="menu-mob" class="menu-mob__input">
+<nav class="menubar">
+    <a href="1" class="menu__item">О материале</a>
+    <a href="2" class="menu__item">Преимущества</a>
+    <a href="3" class="menu__item">Отзывы</a>
+    <a href="4" class="menu__item">FAQ</a>
+    <a href="5" class="menu__item">Контакты</a>
+</nav>
+<address class="location por"><div class="location__circle poa"><img src="icons/Place_green.svg" alt="" class="location__img poa"></div><div class="location__street fz16"><b>Энергетиков 18</b></div><div class="location__city"><span>Оренбург</span></div></address>
+<div class="phone por"><div class="phone__circle-white poa"><img src="icons/Down.svg" alt="" class="phone__img poa"></div><div class="phone__circle poa"><img src="icons/Call.svg" alt="" class="phone__icon poa"></div><div class="phone__number fz18"><b>+7 (922) 543 24 60</b></div><div class="phone__timetable ">9:00 - 18:00, без выходных</div></div>
+<a href="tel:+79225432460" class="circle-call por"><img src="icons/Call.svg" alt="Кнопка вызова" class="circle-call__icon poa"></a>
 <label for="menu-mob">
-<img src="icons/Menu.svg" alt="Кнопка меню" class="menu-mob__icon">
+    <img src="icons/Menu.svg" alt="Кнопка меню" class="menu-mob__icon">
 </label>
-<nav class="mob-menu por">
+<nav class="mob-menu">
     <a href="1" class="mob-menu__item">О материале</a>
     <a href="2" class="mob-menu__item">Преимущества</a>
     <a href="3" class="mob-menu__item">Отзывы</a>
@@ -93,7 +96,7 @@
         </thead>
         <tbody>
             <tr class="table-line">
-                <th class="table-cell"><img src="images/Wood.png" alt="" class="table-cell__img">Дерево</th>
+                <th class="table-cell"><img src="images/Wood.png" alt="" class="table-cell__img">Дерево<!-- <div class="table-cell__void"></div> --></th>
                 <td class="table-cell">от 14 400 ₽/м³</td>
                 <td class="table-cell">0,10 - 0,38 Вт/м.</td>
                 <td class="table-cell"><img src="icons/Star.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""></td>
@@ -137,6 +140,13 @@
 </section>
 <section class="content">
     <div class="content__title"><h1>Купить блоки</h1></div>
+    <div class="content-call">
+        <span class="content-call__start green por">Звоните:</span>
+        <img src="icons/Call_green.svg" alt="" class="content-call__img">
+        <span class="content-call__number">+7 (922) 543 24 60</span>
+        <span class="content-call__txt">или</span>
+        <button class="content-call__button">Закажите обратный звонок</button>
+    </div>
     <section class="goods por">
         <img src="images/Unit-1.png" alt="" class="goods__img poa">
         <div class="goods__name"><h2>Стеновой блок</h2></div>
@@ -156,7 +166,7 @@
                 </tr>
             </table>
         </div>
-            <button class="button-order fz16 por">
+            <button class="button-order fz16">
                 <b>Заказать</b> 
                 <img src="icons/Arrow.svg" alt="" class="button-order__img poa">
             </button>
@@ -180,7 +190,7 @@
                 </tr>
             </table>
         </div>
-            <button class="button-order fz16 por">
+            <button class="button-order fz16">
                 <b>Заказать</b>
                 <img src="icons/Arrow.svg" alt="" class="button-order__img poa">
             </button>
@@ -204,7 +214,7 @@
                 </tr>
             </table>
         </div>
-            <button class="button-order fz16 por">
+            <button class="button-order fz16">
                 <b>Заказать</b>
                 <img src="icons/Arrow.svg" alt="" class="button-order__img poa">
             </button>
@@ -247,7 +257,7 @@
                 <div class="calculator-enter-block-field__measure green">мм.</div>
             </div>
         </div>
-        <div class="calculator-enter-blockv por">
+        <div class="calculator-enter-block por">
             <div class="calculator-enter-block__name fz16"><h2>Толщина раствора</h2></div>
             <div class="calculator-enter-block-field por">
                 <select name="sizes" id="" class="calculator-enter-block-field__input">
@@ -353,44 +363,41 @@
     </blockquote>
 </section>
 <section class="feedback">
-    <form action="" method="post" class="feedback-form">
-        <div class="feedback-form__title"><h1>Спрашивайте!</h1></div>
-        <div class="feedback-form__description"><p>Если у вас есть какие-либо вопросы, свяжитесь с нами любым удобным вам способом или закажите обратный звонок</p></div>
-        <address class="feedback-form-location fz18 por">
-            <img src="icons/Place_green.svg" alt="" class="feedback-form-location__img poa">
-            <p><b>Оренбург, </b></p><p><b>Энергетиков 18</b></p>
-        </address>
-        <address class="feedback-form-tel fz18 por">
-            <img src="icons/Call_green.svg" alt="" class="feedback-form-tel__img poa">
-            <b>+7 (922) 543 24 60</b>
-        </address>
-        <div class="feedback-form-email fz18 por">
-            <img src="icons/Mail.svg" alt="" class="feedback-form-email__img poa">
-            <a href="mailto:otvet@arbolita.ru"><b class="feedback-form-email__txt green line">otvet@arbolita.ru</b></a>
+    <div class="feedback-shell">
+        <div class="feedback-shell-in">
+            <div class="feedback-form__title"><h1>Спрашивайте!</h1></div>
+            <div class="feedback-form__description"><p>Если у вас есть какие-либо вопросы, свяжитесь с нами любым удобным вам способом или закажите обратный звонок</p></div>
+            <address class="feedback-form-location fz18 por">
+                <img src="icons/Place_green.svg" alt="" class="feedback-form-location__img poa">
+                <p><b>Оренбург, </b></p><p><b>Энергетиков 18</b></p>
+            </address>
+            <address class="feedback-form-tel fz18 por">
+                <img src="icons/Call_green.svg" alt="" class="feedback-form-tel__img poa">
+                <b>+7 (922) 543 24 60</b>
+            </address>
+            <div class="feedback-form-email fz18 por">
+                <img src="icons/Mail.svg" alt="" class="feedback-form-email__img poa">
+                <a href="mailto:otvet@arbolita.ru"><b class="feedback-form-email__txt green line">otvet@arbolita.ru</b></a>
+            </div>
         </div>
-        <input type="text" name="name" class="feedback-form__name" placeholder="Имя" required>
-        <input type="email" pattern="[0-9a-z]+@[a-z]+\.[a-z]+" class="feedback-form__email" placeholder="E-mail" required>
-        <textarea name="" id="" cols="30" rows="10" class="feedback-form__area" placeholder="Ваш вопрос" required></textarea>
-        <div class="feedback-form-agree por">
-            <input type="checkbox" name="agree" id="apply" class="feedback-form-agree__check poa" required>
-            <label for="apply" class="feedback-form-agree-block">
-                <div class="feedback-form-agree-block__icon poa"></div>
-                <div class="feedback-form-agree-block__icon-in poa"></div>
-                <div class="feedback-form-agree-block__txt"><p>Согласен на обработку <span class="line">персональных данных</span></p></div>
-            </label> 
-        </div>
-        <button class="feedback-form__button fz16"><b>Задать вопрос</b></button>
-    </form>
+        <form action="" method="post" class="feedback-form">
+            <input type="text" name="name" class="feedback-form__name" placeholder="Имя" required>
+            <input type="email" pattern="[0-9a-z]+@[a-z]+\.[a-z]+" class="feedback-form__email" placeholder="E-mail" required>
+            <textarea name="" id="" cols="30" rows="10" class="feedback-form__area" placeholder="Ваш вопрос" required></textarea>
+            <div class="feedback-form-agree por">
+                <input type="checkbox" name="agree" id="apply" class="feedback-form-agree__check poa" required>
+                <label for="apply" class="feedback-form-agree-block">
+                    <div class="feedback-form-agree-block__icon poa"></div>
+                    <div class="feedback-form-agree-block__icon-in poa"></div>
+                    <div class="feedback-form-agree-block__txt"><p>Согласен на обработку <span class="line">персональных данных</span></p></div>
+                </label> 
+            </div>
+            <button class="feedback-form__button fz16"><b>Задать вопрос</b></button>
+        </form>
+    </div>
 </section>
 </main>
 <footer class="footer">
-<nav class="menubar">
-    <div class="menubar__link">О материале</div>
-    <div class="menubar__link">Преимущества</div>
-    <div class="menubar__link">Отзывы</div>
-    <div class="menubar__link">FAQ</div>
-    <div class="menubar__link">Контакты</div>
-</nav>
 <aside class="social">
     <div class="social-tel por">
         <a href="tel:+79225432460"><div class="social-tel__img poa"><img src="icons/Call.svg" alt="" class="poa"></div></a>
@@ -407,9 +414,9 @@
     <a href="/" class="info-logo logo link por"><b>Арболит</b></a>  
     <address class="info__txt">Общество с ограниченной ответственностью «Арболит» Юридический адрес: ул. 9 Января, 62, Оренбург, Оренбургская обл., 460000 Фактический адрес: ул. 9 Января, 62, Оренбург, Оренбургская обл., 460000 ИНН/КПП: 771241238052/634501001 ОГРН: 51784446179434 Генеральный директор: Арболит Арболитов Арболит</address>
 </aside>
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-<script src="js/map.js"></script>
 <hr class="footer__line">
 </footer>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script src="js/map.js"></script>
 </body>
 </html>
