@@ -1,0 +1,127 @@
+.logo{
+    width: calc(100% - 430px);
+}
+.menubar ul{
+    display: flex;
+}
+.menu__item:nth-child(-n+2){
+    display: block;
+}
+.mob-menu__item:nth-child(-n+2){
+    display: none;
+}
+@media(min-width: 800px){
+    .logo{
+        width: calc(100% - 580px);
+    }
+    .menu__item:nth-child(3){
+        display: block;
+    }
+    .mob-menu__item:nth-child(3){
+        display: none;
+    }
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.content__title{
+    width: 100%;
+}
+.goods{
+    flex: 0 0 300px;
+    margin-right: 30px;
+    box-sizing: border-box;
+    height: 424px;
+}
+.goods-table{
+    position: absolute;
+    bottom: 110px;
+}
+.button-order{
+    bottom: 33px;
+    position: absolute;
+}
+.calculator{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.social-icons{
+    margin: 0;
+}
+@media(min-width: 730px){
+    h1{
+        font-size: 4rem;
+    }
+    .advantage{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .advantage h1{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .advantage-item{
+        width: 300px;
+        height: 240px;
+        padding: 40px;
+        box-sizing: border-box;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    .advantage-item__block-img{
+        position: static;
+    }
+    .advantage-item__title{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 1.8rem;
+    }
+    .feedback-shell{
+        width: 721px;
+        height: 493px;
+        border-radius: 3px;
+        display: flex;
+        box-sizing: border-box;
+        padding: 40px;
+    }
+    .feedback-shell-in{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 20px;
+    }
+    .feedback-form-location__img{
+        top: 10px;
+    }
+    .feedback-form{
+        margin-left: 50px;
+    }
+    .feedback-form__name{
+        width: 270px;
+    }
+    .feedback-form__email{
+        width: 270px;
+    }
+    .feedback-form__area{
+        min-width: 270px;
+        height: 95px;
+    }
+    .feedback-form-agree-block__txt{
+        width: 250px;
+    }
+    .feedback-form__description{
+        font-size: 1.6rem;
+    }
+    .feedback-form-location{
+        font-size: 2rem;
+    }
+    .feedback-form-tel{
+        font-size: 2rem;
+    }
+    .feedback-form-email{
+        font-size: 2rem;
+    }
+}

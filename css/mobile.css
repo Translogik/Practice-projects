@@ -32,12 +32,16 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
 .link{
     text-decoration: none;
     color: black;
-}
-a{
-    text-decoration: none;
 }
 .small{
     font-size: 1.4rem;
@@ -66,6 +70,9 @@ a{
 .line{
     text-decoration: underline;
 }
+.pl40{
+    padding-left: 40px;
+}
 .header{
     padding: 20px;
     display: flex;
@@ -90,14 +97,10 @@ a{
     top: 15px;
     right: 6px;
 }
-.menubar{
-    display: flex;
-}
 .menu__item{
     display: none;
     padding: 10px;
     margin-right: 25px;
-    color: inherit;
 }
 .location{
     display: none;
@@ -133,7 +136,7 @@ a{
     flex: 1;
     margin-top: 20px;
 }
-.mob-menu__item{
+.mob-menu__item a{
     display: block;
     font-weight: 500;
     font-size: 15px; 
@@ -197,6 +200,7 @@ a{
 }
 .advantage h1{
     margin-left: 20px;
+    margin-bottom: 25px;
 }
 .advantage-item{
     padding: 30px 14px 26px 84px;
@@ -216,7 +220,6 @@ a{
 }
 .advantage-item:nth-child(2){
     background: #F0F2F6;
-    margin-top: 25px;
 }
 .advantage-item:nth-child(4){
     background: #262B33;
@@ -398,6 +401,7 @@ a{
 }
 .calculator-result__title{
     margin: 40px 0px 10px;
+    font-size: 2.4rem;
 }
 .calculator-result-content th{
     text-align: right;
@@ -432,15 +436,21 @@ a{
     color: black;
 }
 .delivery{
-    padding-top: 40px;
     display: flex;
     flex-direction: column;
 }
 .delivery__title{
     padding-left: 20px;
+    margin-top: 40px;
 }
 .delivery__description{
     padding: 20px 20px 35px;
+}
+.delivery-contacts__img-desk{
+    display: none;
+}
+.delivery-contacts-location__interlineation{
+    display: none;
 }
 .delivery-contacts{
     padding: 30px 20px;
@@ -449,22 +459,21 @@ a{
     font-size: 1.8rem;
 }
 .delivery-contacts-location{
-    padding-left: 110px;
+    margin-left: 70px;
     margin-bottom: 20px;
 }
 .delivery-contacts-tel{
-    padding-left: 110px;
+    margin-left: 70px;
 }
-.delivery-contacts-location__img{
-    left: 85px;
-    top: 15px;
+.delivery-contacts__icon{
+    width: 16px;
+    text-align: center;
+    left: 15px;
 }
-.delivery-contacts-tel__img{
-    left: 85px;
-    top: 5px;
+.delivery-contacts__icon_place{
+    top: 11px;
 }
 .delivery-contacts__button{
-
     background: #191A1C;
     color: white;
     width: 280px;
@@ -514,9 +523,6 @@ a{
     background: white;
     width: 230px;
     margin: auto;
-}
-.feedback-form{
-    
 }
 .feedback-form__description{
     padding: 23px 0px 30px;
@@ -614,11 +620,17 @@ a{
     display: flex;
     flex-direction: column;
 }
+.footer-shell{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.menubar_footer{
+    display: none;
+}
 .social{
     padding: 40px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 .social-tel__img{
     width: 44px;
