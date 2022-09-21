@@ -54,7 +54,12 @@
 
 
 
-
+.content{
+    flex-wrap: nowrap;
+}
+.content__title{
+    margin-bottom: 100px;
+}
 .content-call__start{
     bottom: 5px;
 }
