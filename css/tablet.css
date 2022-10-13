@@ -21,7 +21,7 @@
         display: none;
     }
 }
-.content{
+.content-inside{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -43,7 +43,7 @@
     bottom: 33px;
     position: absolute;
 }
-.calculator{
+.calculator-inside{
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -54,7 +54,7 @@
     h1{
         font-size: 4rem;
     }
-    .advantage{
+    .advantage-inside{
         display: flex;
         flex-wrap: wrap;
         align-content: center;
@@ -81,7 +81,6 @@
     }
     .feedback-shell{
         width: 721px;
-        height: 493px;
         border-radius: 3px;
         display: flex;
         box-sizing: border-box;

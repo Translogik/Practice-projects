@@ -7,13 +7,15 @@
 <link href="css/fonts.css" rel="stylesheet">
 <link href="css/mobile.css" rel="stylesheet">
 <link href="css/tablet.css" rel="stylesheet" media="(min-width: 641px)">
-<link href="css/big-tablet.css" rel="stylesheet" media="(min-width: 1025px)">
-<link href="css/desktop.css" rel="stylesheet" media="(min-width: 1281px)">
+<link href="css/big-tablet.css" rel="stylesheet" media="(min-width: 1041px)">
+<link href="css/desktop.css" rel="stylesheet" media="(min-width: 1291px)">
 <title>First Adaptive Landing</title>
+<link rel="icon" href="/icons/Logo.png">
 </head>
 <body>
 <header class="header">
-<a href="/" class="logo link por"><b>Арболит</b></a>
+<div class="header-inside wrapper">
+    <a href="/" class="logo link por"><b>Арболит</b></a>
 <input type="checkbox" id="menu-mob" class="menu-mob__input">
 <nav class="menubar">
     <ul>
@@ -39,19 +41,27 @@
         <li class="mob-menu__item"><a href="5">Контакты</a></li>
     </ul>
 </nav>
+</div>
 </header>
 <main class="main">
 <section class="first-screen">
-   <div class="first-screen__title"><h1><span class="green">Арболитовые блоки</span>
-    для строительства теплоэффективного и экологически чистого дома</h1></div>
-   <a href="s" class="link"><div class="action fz16 por"><h2>Рассчитать стоимость</h2> <img src="icons/Calc.svg" alt="Значок калькулятора" class="action__calc poa"></div></a>
-   <div class="gain"><p><strong>на 30% выгоднее</strong></p>
-   <span class="small op8">цена строительcтва из арболита</span>
-   </div>
+   <div class="first-screen-inside wrapper por">
+        <div class="first-screen__title"><h1><span class="green">Арболитовые блоки</span>
+        для строительства теплоэффективного и экологически чистого дома</h1></div>
+       <a href="s" class="link"><div class="action fz16 por"><h2>Рассчитать стоимость</h2> <img src="icons/Calc.svg" alt="Значок калькулятора" class="action__calc poa"></div></a>
+       <aside class="gain por">
+            <strong>на 30% выгоднее</strong>
+            <p class="small op8">цена строительcтва из арболита</p>
+            <picture class="bonus poa">
+                <source srcset="images/Unit-bonus.png" media="(min-width: 1291px)">
+                <img src="images/Unit-0.png" alt="">
+            </picture>
+        </aside>
+    </div>
 </section>
-<aside class="bonus"><img src="images/Unit-0.png" alt="Блок" class="bonus__img por"></aside>
 <section class="advantage">
-    <h1>Преимущества <br><span class="green">арболита</span></h1>
+    <div class="advantage-inside wrapper">
+        <h1>Преимущества <br><span class="green">арболита</span></h1>
     <section class="advantage-item"><div class="advantage-item__block-img"><img src="icons/Good.svg" alt="" class="advantage-item__img"></div>
         <div class="advantage-item__title"><h2>Стандартизирован</h2></div>
         <div class="advantage-item__content">Соответствует стандартам качества ГОСТ 19222-84</div>
@@ -84,68 +94,72 @@
         <div class="advantage-item__title"><h2>Экономичен</h2></div>
         <div class="advantage-item__content">Стоимость дома из арболита ощутимо ниже аналогов из кирпича</div>
     </section>
+    </div>
 </section>
 <section class="content-advantage">
-    <div class="content-advantage__title">
-        <h1>Чем <span class="green">арболит лучше</span> других строительных материалов</h1>
+    <div class="content-advantage-inside wrapper">
+        <div class="content-advantage__title">
+            <h1>Чем <span class="green">арболит лучше</span> других строительных материалов</h1>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="table-header">Тип материала</th>
+                    <th class="table-header">Стоимость материала</th>
+                    <th class="table-header">Теплопроводимость</th>
+                    <th class="table-header">Огнеупорность</th>
+                    <th class="table-header">Простота использования</th>
+                    <th class="table-header">Экономия при строительстве</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-line">
+                    <th class="table-cell"><img src="images/Wood.png" alt="" class="table-cell__img">Дерево</th>
+                    <td class="table-cell">от 14 400 ₽/м³</td>
+                    <td class="table-cell">0,10 - 0,38 Вт/м.</td>
+                    <td class="table-cell"><img src="icons/Star.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""></td>
+                    <td class="table-cell"><img src="icons/Star.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""></td>
+                    <td class="table-cell"><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""></td>
+                </tr>
+                <tr class="table-line">
+                    <th class="table-cell"><img src="images/Brick.png" alt="" class="table-cell__img">Кирпич</th>
+                    <td class="table-cell">от 7 500 ₽/м³</td>
+                    <td class="table-cell">0,50 - 1,50 Вт/м.</td>
+                    <td class="table-cell"><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""></td>
+                    <td class="table-cell"><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""></td>
+                    <td class="table-cell"><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""></td>
+                </tr>
+                <tr class="table-line">
+                    <th class="table-cell"><img src="images/Concrete-1.png" alt="" class="table-cell__img">Газобетон</th>
+                    <td class="table-cell">от 4 400 ₽/м³</td>
+                    <td class="table-cell">0,12 - 0,20 Вт/м.</td>
+                    <td class="table-cell"><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star_void.svg" alt=""></td>
+                    <td class="table-cell"><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star_void.svg" alt=""></td>
+                    <td class="table-cell"><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star_void.svg" alt=""></td>
+                </tr>
+                <tr class="table-line">
+                    <th class="table-cell"><img src="images/Concrete-2.png" alt="" class="table-cell__img">Керамзитобетон</th>
+                    <td class="table-cell">от 5 300 ₽/м³</td>
+                    <td class="table-cell">0,50 - 0,70 Вт/м.</td>
+                    <td class="table-cell"><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""></td>
+                    <td class="table-cell"><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""></td>
+                    <td class="table-cell"><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""></td>
+                </tr>
+                <tr class="table-line table-line_last">
+                    <th class="table-cell table-cell_last"><img src="images/Block.png" alt="" class="table-cell__img table-cell__img_last">Арболит</th>
+                    <td class="table-cell green">от 5 600 ₽/м³</td>
+                    <td class="table-cell">0,08 - 0,17 Вт/м.</td>
+                    <td class="table-cell"><img src="icons/Star_green.svg" alt=""><img src="icons/Star_green.svg" alt=""><img src="icons/Star_green.svg" alt=""><img src="icons/Star_green.svg" alt=""><img src="icons/Star_green_void.svg" alt=""></td>
+                    <td class="table-cell"><img src="icons/Star_green.svg" alt=""><img src="icons/Star_green.svg" alt=""><img src="icons/Star_green.svg" alt=""><img src="icons/Star_green.svg" alt=""><img src="icons/Star_green_void.svg" alt=""></td>
+                    <td class="table-cell"><img src="icons/Star_green.svg" alt=""><img src="icons/Star_green.svg" alt=""><img src="icons/Star_green.svg" alt=""><img src="icons/Star_green.svg" alt=""><img src="icons/Star_green_void.svg" alt=""></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <table class="table">
-        <thead>
-            <tr>
-                <th class="table-header">Тип материала</th>
-                <th class="table-header">Стоимость материала</th>
-                <th class="table-header">Теплопроводимость</th>
-                <th class="table-header">Огнеупорность</th>
-                <th class="table-header">Простота использования</th>
-                <th class="table-header">Экономия при строительстве</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="table-line">
-                <th class="table-cell"><img src="images/Wood.png" alt="" class="table-cell__img">Дерево</th>
-                <td class="table-cell">от 14 400 ₽/м³</td>
-                <td class="table-cell">0,10 - 0,38 Вт/м.</td>
-                <td class="table-cell"><img src="icons/Star.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""></td>
-                <td class="table-cell"><img src="icons/Star.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""></td>
-                <td class="table-cell"><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""></td>
-            </tr>
-            <tr class="table-line">
-                <th class="table-cell"><img src="images/Brick.png" alt="" class="table-cell__img">Кирпич</th>
-                <td class="table-cell">от 7 500 ₽/м³</td>
-                <td class="table-cell">0,50 - 1,50 Вт/м.</td>
-                <td class="table-cell"><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""></td>
-                <td class="table-cell"><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""></td>
-                <td class="table-cell"><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""></td>
-            </tr>
-            <tr class="table-line">
-                <th class="table-cell"><img src="images/Concrete-1.png" alt="" class="table-cell__img">Газобетон</th>
-                <td class="table-cell">от 4 400 ₽/м³</td>
-                <td class="table-cell">0,12 - 0,20 Вт/м.</td>
-                <td class="table-cell"><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star_void.svg" alt=""></td>
-                <td class="table-cell"><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star_void.svg" alt=""></td>
-                <td class="table-cell"><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star_void.svg" alt=""></td>
-            </tr>
-            <tr class="table-line">
-                <th class="table-cell"><img src="images/Concrete-2.png" alt="" class="table-cell__img">Керамзитобетон</th>
-                <td class="table-cell">от 5 300 ₽/м³</td>
-                <td class="table-cell">0,50 - 0,70 Вт/м.</td>
-                <td class="table-cell"><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""></td>
-                <td class="table-cell"><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""></td>
-                <td class="table-cell"><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star.svg" alt=""><img src="icons/Star_void.svg" alt=""><img src="icons/Star_void.svg" alt=""></td>
-            </tr>
-            <tr class="table-line">
-                <th class="table-cell table-cell_last"><img src="images/Block.png" alt="" class="table-cell__img table-cell__img_last">Арболит</th>
-                <td class="table-cell">от 5 600 ₽/м³</td>
-                <td class="table-cell green">0,08 - 0,17 Вт/м.</td>
-                <td class="table-cell"><img src="icons/Star_green.svg" alt=""><img src="icons/Star_green.svg" alt=""><img src="icons/Star_green.svg" alt=""><img src="icons/Star_green.svg" alt=""><img src="icons/Star_green_void.svg" alt=""></td>
-                <td class="table-cell"><img src="icons/Star_green.svg" alt=""><img src="icons/Star_green.svg" alt=""><img src="icons/Star_green.svg" alt=""><img src="icons/Star_green.svg" alt=""><img src="icons/Star_green_void.svg" alt=""></td>
-                <td class="table-cell"><img src="icons/Star_green.svg" alt=""><img src="icons/Star_green.svg" alt=""><img src="icons/Star_green.svg" alt=""><img src="icons/Star_green.svg" alt=""><img src="icons/Star_green_void.svg" alt=""></td>
-            </tr>
-        </tbody>
-    </table>
 </section>
 <section class="content">
-    <div class="content__title"><h1>Купить блоки</h1></div>
+    <div class="content-inside wrapper">
+        <div class="content__title"><h1>Купить блоки</h1></div>
     <div class="content-call">
         <span class="content-call__start green por">Звоните:</span>
         <img src="icons/Call_green.svg" alt="" class="content-call__img">
@@ -154,7 +168,10 @@
         <button class="content-call__button">Закажите обратный звонок</button>
     </div>
     <section class="goods por">
-        <img src="images/Unit-1.png" alt="" class="goods__img poa">
+        <picture class="goods__img poa">
+            <source srcset="images/unit-1-desk.png" media="(min-width: 1291px)">
+            <img src="images/Unit-1.png" alt="">
+        </picture>
         <div class="goods__name"><h2>Стеновой блок</h2></div>
         <div class="goods__size green fz16"><h2>500x200x300 мм</h2></div>
         <div class="goods__description"><p>Применяется в индивидуальном строительстве для возведения несущих стен частного дома или коттеджа</p></div>
@@ -166,19 +183,22 @@
                     <td class="goods-table-line_cell small">в 1 м<sup>3</sup></td>
                 </tr>
                 <tr class="goods-table-line fz16">
-                    <th class="goods-table-line_cell">125 ₽/шт.</th>
+                    <th class="goods-table-line_cell green">125 ₽/шт.</th>
                     <th class="goods-table-line_cell">19,5 кг</th>
                     <th class="goods-table-line_cell">33 шт.</th>
                 </tr>
             </table>
         </div>
-            <button class="button-order fz16">
+            <button class="button-order fz16 por">
                 <b>Заказать</b> 
                 <img src="icons/Arrow.svg" alt="" class="button-order__img poa">
             </button>
     </section>
     <section class="goods por">
-        <img src="images/Unit-2.png" alt="" class="goods__img poa">
+        <picture class="goods__img poa">
+            <source srcset="images/unit-2-desk.png" media="(min-width: 1291px)">
+            <img src="images/Unit-2.png" alt="">
+        </picture>
         <div class="goods__name"><h2>Перегородочный блок</h2></div>
         <div class="goods__size green fz16"><h2>500x300x140 мм</h2></div>
         <div class="goods__description"><p>Применяется в индивидуальном строительстве для возведения перегородок внутри дома и для стен  построек без серъезных нагрузок.</p></div>
@@ -190,19 +210,22 @@
                     <td class="goods-table-line_cell small">в 1 м<sup>3</sup></td>
                 </tr>
                 <tr class="goods-table-line fz16">
-                    <th class="goods-table-line_cell">95 ₽/шт.</th>
+                    <th class="goods-table-line_cell green">95 ₽/шт.</th>
                     <th class="goods-table-line_cell">12 кг</th>
                     <th class="goods-table-line_cell">48 шт.</th>
                 </tr>
             </table>
         </div>
-            <button class="button-order fz16">
+            <button class="button-order fz16 por">
                 <b>Заказать</b>
                 <img src="icons/Arrow.svg" alt="" class="button-order__img poa">
             </button>
     </section>
     <section class="goods por">
-        <img src="images/Unit-3.png" alt="" class="goods__img poa">
+        <picture class="goods__img poa">
+            <source srcset="images/unit-3-desk.png" media="(min-width: 1291px)">
+            <img src="images/Unit-3.png" alt="">
+        </picture>
         <div class="goods__name"><h2>Блок U-образный</h2></div>
         <div class="goods__size green fz16"><h2>500×200×300 мм</h2></div>
         <div class="goods__description"><p>Применяется для устройства дверных и оконных перемычек, заливки армопоясов под плиты перекрытия</p></div>
@@ -214,126 +237,130 @@
                     <td class="goods-table-line_cell small">в 1 м<sup>3</sup></td>
                 </tr>
                 <tr class="goods-table-line fz16">
-                    <th class="goods-table-line_cell">140 ₽/шт.</th>
+                    <th class="goods-table-line_cell green">140 ₽/шт.</th>
                     <th class="goods-table-line_cell">14 кг</th>
                     <th class="goods-table-line_cell">33 шт.</th>
                 </tr>
             </table>
         </div>
-            <button class="button-order fz16">
+            <button class="button-order fz16 por">
                 <b>Заказать</b>
                 <img src="icons/Arrow.svg" alt="" class="button-order__img poa">
             </button>
     </section>
+    </div>
 </section>
 <section class="calculator">
-    <div class="calculator__title">
-        <h1>Калькулятор расчета строительных блоков</h1>
-    </div>
-    <form action="index.html" method="post" class="calculator-enter">
-        <div class="calculator-enter-block por">
-            <div class="calculator-enter-block__name fz16"><h2>Размер блока (Д*Ш*В)</h2></div>
-            <div class="calculator-enter-block-field por">
-                <select name="sizes" id="" class="calculator-enter-block-field__input">
-                <option>500х300х200 мм</option>
-                <option>500x200x300 мм</option>
-                <option>500x300x140 мм</option>
-                </select>
-                <div class="calculator-enter-block-field__measure green"><img src="icons/Down.svg" alt=""></div>
-            </div>
+    <div class="calculator-inside wrapper">
+        <div class="calculator__title">
+            <h1>Калькулятор расчета строительных блоков</h1>
         </div>
-        <div class="calculator-enter-block por">
-            <div class="calculator-enter-block__name fz16"><h2>Периметр стен</h2></div>
-            <div class="calculator-enter-block-field por">
-                <input type="number" class="calculator-enter-block-field__input" placeholder="0" required>
-                <div class="calculator-enter-block-field__measure green">м.</div>
-            </div>
-        </div>
-        <div class="calculator-enter-block por">
-            <div class="calculator-enter-block__name fz16"><h2>Высота стен</h2></div>
+        <form action="index.html" method="post" class="calculator-enter">
+            <div class="calculator-enter-block por">
+                <div class="calculator-enter-block__name fz16"><h2>Размер блока (Д*Ш*В)</h2></div>
                 <div class="calculator-enter-block-field por">
-                <input type="number" class="calculator-enter-block-field__input" placeholder="0" required>
-                <div class="calculator-enter-block-field__measure green">м.</div>
+                    <select name="sizes" id="" class="calculator-enter-block-field__input">
+                    <option>500х300х200 мм</option>
+                    <option>500x200x300 мм</option>
+                    <option>500x300x140 мм</option>
+                    </select>
+                    <div class="calculator-enter-block-field__measure green"><img src="icons/Down.svg" alt=""></div>
+                </div>
             </div>
-        </div>
-        <div class="calculator-enter-block por">
-            <div class="calculator-enter-block__name fz16"><h2>Толщина раствора</h2></div>
-            <div class="calculator-enter-block-field por">
-                <input type="number" class="calculator-enter-block-field__input" placeholder="0" required>
-                <div class="calculator-enter-block-field__measure green">мм.</div>
+            <div class="calculator-enter-block por">
+                <div class="calculator-enter-block__name fz16"><h2>Периметр стен</h2></div>
+                <div class="calculator-enter-block-field por">
+                    <input type="number" class="calculator-enter-block-field__input" placeholder="0" required>
+                    <div class="calculator-enter-block-field__measure green">м.</div>
+                </div>
             </div>
-        </div>
-        <div class="calculator-enter-block por">
-            <div class="calculator-enter-block__name fz16"><h2>Толщина раствора</h2></div>
-            <div class="calculator-enter-block-field por">
-                <select name="sizes" id="" class="calculator-enter-block-field__input">
-                <option>Один блок</option>
-                <option>Два блока</option>
-                <option>Три блока</option>
-                </select>
-                <div class="calculator-enter-block-field__measure green"><img src="icons/Down.svg" alt=""></div>
+            <div class="calculator-enter-block por">
+                <div class="calculator-enter-block__name fz16"><h2>Высота стен</h2></div>
+                    <div class="calculator-enter-block-field por">
+                    <input type="number" class="calculator-enter-block-field__input" placeholder="0" required>
+                    <div class="calculator-enter-block-field__measure green">м.</div>
+                </div>
             </div>
-        </div>
-        <div class="calculator-enter-block calculator-enter-block_last por">
-            <div class="calculator-enter-block__name fz16"><h2>Окна и двери</h2></div>
-            <div class="calculator-enter-block-field por">
-                <button type="button" class="calculator-enter-block-field_button grey"><img src="icons/Plus.svg" alt="" class="calculator-enter-block-field__icon">Добавить</button>
+            <div class="calculator-enter-block por">
+                <div class="calculator-enter-block__name fz16"><h2>Толщина раствора</h2></div>
+                <div class="calculator-enter-block-field por">
+                    <input type="number" class="calculator-enter-block-field__input" placeholder="0" required>
+                    <div class="calculator-enter-block-field__measure green">мм.</div>
+                </div>
             </div>
-        </div>
-        <div class="calculator-enter-block calculator-enter-block_last por">
-            <div class="calculator-enter-block__name fz16"><h2>Фронтоны</h2></div>
-            <div class="calculator-enter-block-field por">
-                <button type="button" class="calculator-enter-block-field_button green"><img src="icons/Edit.svg" alt="" class="calculator-enter-block-field__icon">Изменить</button>
+            <div class="calculator-enter-block por">
+                <div class="calculator-enter-block__name fz16"><h2>Толщина раствора</h2></div>
+                <div class="calculator-enter-block-field por">
+                    <select name="sizes" id="" class="calculator-enter-block-field__input">
+                    <option>Один блок</option>
+                    <option>Два блока</option>
+                    <option>Три блока</option>
+                    </select>
+                    <div class="calculator-enter-block-field__measure green"><img src="icons/Down.svg" alt=""></div>
+                </div>
             </div>
-        </div>
-    </form>
-    <div class="calculator-result">
-        <div class="calculator-result__title"><b>Результаты расчета</b></div>
-        <table class="calculator-result-content">
-            <tr>
-                <td>Объем одного блока</td>
-                <th>0.035 м<sup>3</sup></th>
-            </tr>
-            <tr>
-                <td>Количество блоков в кубе</td>
-                <th>29 шт./м<sup>3</sup></th>
-            </tr>
-            <tr>
-                <td>Рядов</td>
-                <th>24</th>
-            </tr>
-            <tr>
-                <td>Площадь стен</td>
-                <th>25 м<sup>2</sup></th>
-            </tr>
-            <tr>
-                <td>Площадь проемов</td>
-                <th>0 м<sup>2</sup></th>
-            </tr>
-            <tr>
-                <td>Площадь фронтонов</td>
-                <th>0 м<sup>2</sup></th>
-            </tr>
-            <tr>
-                <td>Общая площадь</td>
-                <th>25 м<sup>2</sup></th>
-            </tr>
-            <tr>
-                <td>Объем</td>
-                <th>8750 м<sup>3</sup></th>
-            </tr>
-        </table>
-        <div class="calculator-result-total">
-            <div class="calculator-result-total-content">
-                <div class="calculator-result-total-content__description"><span>Итого нужно:</span></div>
-                <div class="calculator-result-total-content__numbers"><b>302 шт.</b></div>
+            <div class="calculator-enter-block calculator-enter-block_last por">
+                <div class="calculator-enter-block__name fz16"><h2>Окна и двери</h2></div>
+                <div class="calculator-enter-block-field por">
+                    <button type="button" class="calculator-enter-block-field_button grey"><img src="icons/Plus.svg" alt="" class="calculator-enter-block-field__icon">Добавить</button>
+                </div>
             </div>
-            <button class="calculator-result-total__button fz16"><b>Сделать заказ</b></button>
+            <div class="calculator-enter-block calculator-enter-block_last por">
+                <div class="calculator-enter-block__name fz16"><h2>Фронтоны</h2></div>
+                <div class="calculator-enter-block-field por">
+                    <button type="button" class="calculator-enter-block-field_button green"><img src="icons/Edit.svg" alt="" class="calculator-enter-block-field__icon">Изменить</button>
+                </div>
+            </div>
+        </form>
+        <div class="calculator-result">
+            <div class="calculator-result__title"><b>Результаты расчета</b></div>
+            <table class="calculator-result-content">
+                <tr>
+                    <td>Объем одного блока</td>
+                    <th>0.035 м<sup>3</sup></th>
+                </tr>
+                <tr>
+                    <td>Количество блоков в кубе</td>
+                    <th>29 шт./м<sup>3</sup></th>
+                </tr>
+                <tr>
+                    <td>Рядов</td>
+                    <th>24</th>
+                </tr>
+                <tr>
+                    <td>Площадь стен</td>
+                    <th>25 м<sup>2</sup></th>
+                </tr>
+                <tr>
+                    <td>Площадь проемов</td>
+                    <th>0 м<sup>2</sup></th>
+                </tr>
+                <tr>
+                    <td>Площадь фронтонов</td>
+                    <th>0 м<sup>2</sup></th>
+                </tr>
+                <tr>
+                    <td>Общая площадь</td>
+                    <th>25 м<sup>2</sup></th>
+                </tr>
+                <tr>
+                    <td>Объем</td>
+                    <th>8750 м<sup>3</sup></th>
+                </tr>
+            </table>
+            <div class="calculator-result-total">
+                <div class="calculator-result-total-content">
+                    <div class="calculator-result-total-content__description"><span>Итого нужно:</span></div>
+                    <div class="calculator-result-total-content__numbers"><b>302 шт.</b></div>
+                </div>
+                <button class="calculator-result-total__button fz16"><b>Сделать заказ</b></button>
+            </div>
         </div>
     </div>
 </section>
 <section class="delivery por">
-    <div class="delivery__title"><h1>Доставка</h1></div>
+    <div class="delivery-inside wrapper">
+        <div class="delivery__title"><h1>Доставка</h1></div>
     <div class="delivery__description fz16"><p>Расчет доставки производится индивидуально в зависитмости от типа автомобиля и расстояния.
         <br><br>Так же возможен самовывоз</p></div>
     <address class="delivery-contacts por">
@@ -354,10 +381,12 @@
         </div>
         <button class="delivery-contacts__button fz16"><b>Закажите обратный звонок</b></button>
     </address>
+    </div>
     <div class="delivery-map" id="map"></div>
 </section>
 <section class="reviews">
-    <div class="reviews__title"><h1>Отзывы наших клиентов</h1></div>
+    <div class="reviews-inside wrapper">
+        <div class="reviews__title"><h1>Отзывы наших клиентов</h1></div>
     <blockquote class="reviews-content por">
         <img src="icons/Quotes.svg" alt="" class="reviews-content__quotes poa">
         <p>Изучал, как правильно выбирать арболитовые блоки, на что обратить внимание. На рынке много производителей и это натолкнуло на мысль, что изготовление не сложное, а поэтому вполне доступное для предприимчивых умельцев. Чтобы избежать неприятностей в дальнейшем приобрел в «Арболите». Для отделки использовал фасадную штукатурку, хотя можно было и просто ПЦС. В общем, рекомендую</p>
@@ -365,7 +394,7 @@
     </blockquote>
     <blockquote class="reviews-content por">
         <img src="icons/Quotes.svg" alt="" class="reviews-content__quotes poa">
-        <p>Изучал, как правильно выбирать арболитовые блоки, на что обратить внимание. На рынке много производителей и это натолкнуло на мысль, что изготовление не сложное, а поэтому вполне доступное для предприимчивых умельцев. Чтобы избежать неприятностей в дальнейшем приобрел в «Арболите». Для отделки использовал фасадную штукатурку, хотя можно было и просто ПЦС. В общем, рекомендую</p>
+        <p>Хотелось «зеленый» дом, чтобы поменьше химии, т.к. в семье есть астматики. Экологичность арболита является прекрасной рекомендацией к его применению. Долго выбирал материал, в итоге не пожалел ни разу. Что касается «Арболиты» – могу рекомендовать. Посчитали материал почти без остатков, привезли точно в срок и каменщики не жаловались. Спасибо большое!</p>
         <cite class="reviews-content-caption"><img src="images/photo-2.png" alt="" class="reviews-content-caption__photo poa"><b>Руслан Зиатдинов</b><br><time class="fz16">05.03.2021</time></cite>
     </blockquote>
     <blockquote class="reviews-content por">
@@ -373,72 +402,100 @@
         <p>Изучал, как правильно выбирать арболитовые блоки, на что обратить внимание. На рынке много производителей и это натолкнуло на мысль, что изготовление не сложное, а поэтому вполне доступное для предприимчивых умельцев. Чтобы избежать неприятностей в дальнейшем приобрел в «Арболите». Для отделки использовал фасадную штукатурку, хотя можно было и просто ПЦС. В общем, рекомендую</p>
         <cite class="reviews-content-caption"><img src="images/photo-3.png" alt="" class="reviews-content-caption__photo poa"><b>Руслан Зиатдинов</b><br><time class="fz16">05.03.2021</time></cite>
     </blockquote>
+    </div>
 </section>
 <section class="feedback">
-    <div class="feedback-shell">
-        <div class="feedback-shell-in">
-            <div class="feedback-form__title"><h1>Спрашивайте!</h1></div>
-            <div class="feedback-form__description"><p>Если у вас есть какие-либо вопросы, свяжитесь с нами любым удобным вам способом или закажите обратный звонок</p></div>
-            <address class="feedback-form-location fz18 por">
-                <img src="icons/Place_green.svg" alt="" class="feedback-form-location__img poa">
-                <p><b>Оренбург, </b></p><p><b>Энергетиков 18</b></p>
-            </address>
-            <address class="feedback-form-tel fz18 por">
-                <img src="icons/Call_green.svg" alt="" class="feedback-form-tel__img poa">
-                <b>+7 (922) 543 24 60</b>
-            </address>
-            <div class="feedback-form-email fz18 por">
-                <img src="icons/Mail.svg" alt="" class="feedback-form-email__img poa">
-                <a href="mailto:otvet@arbolita.ru"><b class="feedback-form-email__txt green line">otvet@arbolita.ru</b></a>
+    <div class="feedback-inside wrapper">
+        <div class="feedback-shell">
+            <div class="feedback-shell-in">
+                <div class="feedback-form__title"><h1>Спрашивайте!</h1></div>
+                <div class="feedback-form__description"><p>Если у вас есть какие-либо вопросы, свяжитесь с нами любым удобным вам способом или закажите обратный звонок</p></div>
+                <address class="feedback-form-location fz18 por">
+                    <img src="icons/Place_green.svg" alt="" class="feedback-form-location__img poa">
+                    <p><b>Оренбург, </b></p><p><b>Энергетиков 18</b></p>
+                </address>
+                <address class="feedback-form-tel fz18 por">
+                    <img src="icons/Call_green.svg" alt="" class="feedback-form-tel__img poa">
+                    <b>+7 (922) 543 24 60</b>
+                </address>
+                <div class="feedback-form-email fz18 por">
+                    <img src="icons/Mail.svg" alt="" class="feedback-form-email__img poa">
+                    <a href="mailto:otvet@arbolita.ru"><b class="feedback-form-email__txt green line">otvet@arbolita.ru</b></a>
+                </div>
             </div>
+            <form action="" method="post" class="feedback-form">
+                <input type="text" name="name" class="feedback-form__name" placeholder="Имя" required>
+                <input type="email" pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)" class="feedback-form__email" placeholder="E-mail" required>
+                <textarea name="" id="" cols="30" rows="10" class="feedback-form__area" placeholder="Ваш вопрос" required></textarea>
+                <div class="feedback-form-agree por">
+                    <input type="checkbox" name="agree" id="apply" class="feedback-form-agree__check poa" required>
+                    <label for="apply" class="feedback-form-agree-block">
+                        <div class="feedback-form-agree-block__icon poa"></div>
+                        <div class="feedback-form-agree-block__icon-in poa"></div>
+                        <div class="feedback-form-agree-block__txt" tabindex="0"><p>Согласен на обработку <span class="line">персональных данных</span></p></div>
+                    </label> 
+                </div>
+                <button class="feedback-form__button fz16"><b>Задать вопрос</b></button>
+            </form>
         </div>
-        <form action="" method="post" class="feedback-form">
-            <input type="text" name="name" class="feedback-form__name" placeholder="Имя" required>
-            <input type="email" pattern="[0-9a-z]+@[a-z]+\.[a-z]+" class="feedback-form__email" placeholder="E-mail" required>
-            <textarea name="" id="" cols="30" rows="10" class="feedback-form__area" placeholder="Ваш вопрос" required></textarea>
-            <div class="feedback-form-agree por">
-                <input type="checkbox" name="agree" id="apply" class="feedback-form-agree__check poa" required>
-                <label for="apply" class="feedback-form-agree-block">
-                    <div class="feedback-form-agree-block__icon poa"></div>
-                    <div class="feedback-form-agree-block__icon-in poa"></div>
-                    <div class="feedback-form-agree-block__txt"><p>Согласен на обработку <span class="line">персональных данных</span></p></div>
-                </label> 
-            </div>
-            <button class="feedback-form__button fz16"><b>Задать вопрос</b></button>
-        </form>
     </div>
 </section>
 </main>
 <footer class="footer">
-<div class="footer-shell">
-<nav class="menubar menubar_footer">
-    <ul>
-        <li class="menu__item"><a href="1">О материале</a></li>
-        <li class="menu__item"><a href="2">Преимущества</a></li>
-        <li class="menu__item"><a href="3">Отзывы</a></li>
-        <li class="menu__item"><a href="4">FAQ</a></li>
-        <li class="menu__item"><a href="5">Контакты</a></li>
-    </ul>
-</nav>
-<aside class="social">
-    <div class="social-tel por">
-        <a href="tel:+79225432460"><div class="social-tel__img poa"><img src="icons/Call.svg" alt="" class="poa"></div></a>
-        <div class="social-tel__number fz18"><b>+7 (922) 543 24 60</b></div>
-        <div class="social-tel__timetable">9:00 - 18:00, без выходных</div>
-    </div>
-    <div class="social-icons">
-        <a href="" class="social-icons__item"><img src="icons/Instagram.svg" alt=""></a>
-        <a href="" class="social-icons__item social-icons__item_telega"><img src="icons/Telegram.svg" alt=""></a>
-        <a href="" class="social-icons__item"><img src="icons/Tel.svg" alt=""></a>
-    </div>
-</aside>
+<div class="footer-inside wrapper">
+    <div class="footer-shell">
+        <nav class="menubar menubar_footer">
+            <ul>
+                <li class="menu__item"><a href="1">О материале</a></li>
+                <li class="menu__item"><a href="2">Преимущества</a></li>
+                <li class="menu__item"><a href="3">Отзывы</a></li>
+                <li class="menu__item"><a href="4">FAQ</a></li>
+                <li class="menu__item"><a href="5">Контакты</a></li>
+            </ul>
+        </nav>
+        <aside class="social">
+            <div class="social-tel por">
+                <a href="tel:+79225432460"><div class="social-tel__img poa"><img src="icons/Call.svg" alt="" class="poa"></div></a>
+                <div class="social-tel__number fz18"><b>+7 (922) 543 24 60</b></div>
+                <div class="social-tel__timetable">9:00 - 18:00, без выходных</div>
+            </div>
+            <div class="social-icons">
+                <a href="" class="social-icons__item"><img src="icons/Instagram.svg" alt=""></a>
+                <a href="" class="social-icons__item social-icons__item_telega"><img src="icons/Telegram.svg" alt=""></a>
+                <a href="" class="social-icons__item"><img src="icons/Tel.svg" alt=""></a>
+            </div>
+        </aside>
+        </div>
+        <aside class="info">
+            <a href="/" class="info-logo logo link por"><b>Арболит</b></a>  
+            <address class="info__txt">Общество с ограниченной ответственностью «Арболит» Юридический адрес: ул. 9 Января, 62, Оренбург, Оренбургская обл., 460000 Фактический адрес: ул. 9 Января, 62, Оренбург, Оренбургская обл., 460000 ИНН/КПП: 771241238052/634501001 ОГРН: 51784446179434 Генеральный директор: Арболит Арболитов Арболит</address>
+        </aside>
+        <hr class="footer__line">
 </div>
-<aside class="info">
-    <a href="/" class="info-logo logo link por"><b>Арболит</b></a>  
-    <address class="info__txt">Общество с ограниченной ответственностью «Арболит» Юридический адрес: ул. 9 Января, 62, Оренбург, Оренбургская обл., 460000 Фактический адрес: ул. 9 Января, 62, Оренбург, Оренбургская обл., 460000 ИНН/КПП: 771241238052/634501001 ОГРН: 51784446179434 Генеральный директор: Арболит Арболитов Арболит</address>
-</aside>
-<hr class="footer__line">
 </footer>
+<dialog class="order" open>
+    <button class="order-exit poa">
+        <img src="icons/cross.png" alt="" class="order-exit__icon">
+    </button>
+    <h2>Заказать аболит</h2>
+    <p class="green"><b>500x200x300 мм</b></p>
+    <form action="" method="dialog" class="order-form">
+        <input type="text" name="name" class="feedback-form__name" placeholder="Имя" required>
+            <input type="email" pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)" class="feedback-form__email" placeholder="E-mail" required>
+            <button class="button-order fz16 por">
+                <b>Оставить заявку</b> 
+                <img src="icons/Arrow.svg" alt="" class="button-order__img poa">
+            </button>
+            <div class="feedback-form-agree por">
+                <input type="checkbox" name="agree" id="apply-order" class="feedback-form-agree__check poa" required>
+                <label for="apply-order" class="feedback-form-agree-block">
+                    <div class="feedback-form-agree-block__icon poa"></div>
+                    <div class="feedback-form-agree-block__icon-in poa"></div>
+                    <div class="feedback-form-agree-block__txt" tabindex="0"><p>Согласен на обработку <span class="line">персональных данных</span></p></div>
+                </label> 
+            </div>
+    </form>
+</dialog>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 <script src="js/map.js"></script>
 </body>
