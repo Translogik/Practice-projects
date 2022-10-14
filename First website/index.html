@@ -27,7 +27,7 @@
     </ul>
 </nav>
 <address class="location por"><div class="location__circle poa"><img src="icons/Place_green.svg" alt="" class="location__img poa"></div><div class="location__street fz16"><b>Энергетиков 18</b></div><div class="location__city"><span>Оренбург</span></div></address>
-<div class="phone por"><div class="phone__circle-white poa"><img src="icons/Down.svg" alt="" class="phone__img poa"></div><div class="phone__circle poa"><img src="icons/Call.svg" alt="" class="phone__icon poa"></div><div class="phone__number fz18"><b>+7 (922) 543 24 60</b></div><div class="phone__timetable ">9:00 - 18:00, без выходных</div></div>
+<div class="phone por"><div class="phone__circle poa"><img src="icons/Call.svg" alt="" class="phone__icon poa"></div><div class="phone__circle-white poa"><img src="icons/Down.svg" alt="" class="phone__img poa"></div><div class="phone__number fz18"><b>+7 (922) 543 24 60</b></div><div class="phone__timetable ">9:00 - 18:00, без выходных</div></div>
 <a href="tel:+79225432460" class="circle-call por"><img src="icons/Call.svg" alt="Кнопка вызова" class="circle-call__icon poa"></a>
 <label for="menu-mob">
     <img src="icons/Menu.svg" alt="Кнопка меню" class="menu-mob__icon">
@@ -360,7 +360,7 @@
 </section>
 <section class="delivery por">
     <div class="delivery-inside wrapper">
-        <div class="delivery__title"><h1>Доставка</h1></div>
+        <div class="delivery__title por"><h1>Доставка</h1></div>
     <div class="delivery__description fz16"><p>Расчет доставки производится индивидуально в зависитмости от типа автомобиля и расстояния.
         <br><br>Так же возможен самовывоз</p></div>
     <address class="delivery-contacts por">
@@ -382,7 +382,9 @@
         <button class="delivery-contacts__button fz16"><b>Закажите обратный звонок</b></button>
     </address>
     </div>
-    <div class="delivery-map" id="map"></div>
+    <div class="delivery-map" id="map">
+        <div class="map-gradient poa"></div>
+    </div>
 </section>
 <section class="reviews">
     <div class="reviews-inside wrapper">
@@ -473,28 +475,43 @@
         <hr class="footer__line">
 </div>
 </footer>
-<dialog class="order" open>
-    <button class="order-exit poa">
-        <img src="icons/cross.png" alt="" class="order-exit__icon">
-    </button>
-    <h2>Заказать аболит</h2>
-    <p class="green"><b>500x200x300 мм</b></p>
-    <form action="" method="dialog" class="order-form">
-        <input type="text" name="name" class="feedback-form__name" placeholder="Имя" required>
-            <input type="email" pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)" class="feedback-form__email" placeholder="E-mail" required>
-            <button class="button-order fz16 por">
-                <b>Оставить заявку</b> 
-                <img src="icons/Arrow.svg" alt="" class="button-order__img poa">
+<dialog class="order">
+    <div class="order-wrapper">
+        <div class="order-action por">
+            <button class="order-exit poa">
+                <img src="icons/cross.png" alt="" class="order-exit__icon">
             </button>
-            <div class="feedback-form-agree por">
-                <input type="checkbox" name="agree" id="apply-order" class="feedback-form-agree__check poa" required>
-                <label for="apply-order" class="feedback-form-agree-block">
-                    <div class="feedback-form-agree-block__icon poa"></div>
-                    <div class="feedback-form-agree-block__icon-in poa"></div>
-                    <div class="feedback-form-agree-block__txt" tabindex="0"><p>Согласен на обработку <span class="line">персональных данных</span></p></div>
-                </label> 
-            </div>
-    </form>
+            <h2>Заказать аболит</h2>
+            <p class="green"><b>500x200x300 мм</b></p>
+            <form action="" method="dialog" class="order-form">
+                <input type="text" name="name" class="feedback-form__name" placeholder="Имя" required>
+                    <input type="email" pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)" class="feedback-form__email" placeholder="E-mail" required>
+                    <button class="button-order fz16 por">
+                        <b>Оставить заявку</b> 
+                        <img src="icons/Arrow.svg" alt="" class="button-order__img poa">
+                    </button>
+                    <div class="feedback-form-agree por">
+                        <input type="checkbox" name="agree" id="apply-order" class="feedback-form-agree__check poa" required>
+                        <label for="apply-order" class="feedback-form-agree-block">
+                            <div class="feedback-form-agree-block__icon poa"></div>
+                            <div class="feedback-form-agree-block__icon-in poa"></div>
+                            <div class="feedback-form-agree-block__txt" tabindex="0"><p>Согласен на обработку <span class="line">персональных данных</span></p></div>
+                        </label> 
+                    </div>
+            </form>
+        </div>
+    </div>
+</dialog>
+<dialog class="order">
+    <div class="order-wrapper">
+        <div class="order-complete por">
+            <button class="order-exit poa">
+                <img src="icons/cross.png" alt="" class="order-exit__icon">
+            </button>
+            <h2>Спасибо</h2>
+            <p class="green fz16">Ваша заявка принята</p>
+        </div>
+    </div>
 </dialog>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 <script src="js/map.js"></script>

@@ -73,6 +73,41 @@ ul{
 .pl40{
     padding-left: 40px;
 }
+.menu__item:hover{
+    background: #57ab2742;
+}
+.action:hover{
+    background: #4d5a4557;
+}
+.button-order:hover{
+    box-shadow: none;
+    transform: translate(2px, 4px);
+}
+.content-call__button:hover{
+    background: #57AB27;
+}
+.calculator-enter-block-field_button:hover{
+    background: #4d5a4557;
+}
+[class="calculator-enter-block-field_button green"]:hover{
+    background: #57ab2742;
+}
+.calculator-result-total__button:hover{
+    background: #4d5a4557;
+}
+.delivery-contacts__button:hover{
+    background: #4d5a4557;
+}
+.feedback-form__button:hover{
+    box-shadow: none;
+    transform: translate(2px, 4px);
+}
+.social-tel__img:hover{
+    background: #57ab2742;
+}
+.social-icons__item:hover{
+    background: #4d5a4557;
+}
 .header-inside{
     padding: 20px;
     display: flex;
@@ -355,6 +390,7 @@ ul{
     box-sizing: border-box;
     padding-left: 25px;
     text-align: left;
+    box-shadow: 0px 15px 40px rgba(15, 54, 1, 0.3);
 }
 .button-order__txt{
     text-align: left;
@@ -640,6 +676,7 @@ ul{
     color: white;
     background: #57AB27;
     border-radius: 2px;
+    box-shadow: 0px 15px 40px rgba(15, 54, 1, 0.3);
 }
 .footer{
     background: #191A1C;
@@ -733,7 +770,18 @@ ul{
     padding-left: 45px;
 }
 .order{
-    z-index: 2;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    border: none;
+    background: rgba(0, 0, 0, 0.5);
+}
+.order-wrapper{
+    display: flex;
+    height: 100%;
+}
+.order-action{
     width: 334px;
     height: 435px;
     box-sizing: border-box;
@@ -741,10 +789,8 @@ ul{
     flex-direction: column;
     align-items: center;
     padding: 35px;
-    border: none;
-    position: fixed;
-    top: 20%;
-    left: 40%;
+    margin: auto;
+    background: white;
 }
 .order-exit{
     width: 20px;
@@ -773,6 +819,13 @@ ul{
 .order .feedback-form-agree{
     margin-top: 30px;
 }
-dialog::backdrop{
-    opacity: 0.9;
+.order-complete{
+    display: flex;
+    width: 334px;
+    height: 139px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: white;
+    margin: auto;
 }

@@ -37,6 +37,7 @@
     border-radius: 100%;
     left: 0;
     top: 8px;
+    background: white;
 }
 .phone__img{
     width: 8px;
@@ -58,6 +59,9 @@
 .phone__timetable{
     margin-top: 5px;
     font-size: 1.4rem;
+}
+.first-screen{
+    background: url(../images/Rectangle\ 8.png) left 0 bottom 0/contain no-repeat, url(../images/tree.png) right 0/contain no-repeat, url("../images/Back-1.jpg") 50% 50%/cover;
 }
 .first-screen-inside{
     display: block;
@@ -134,26 +138,13 @@
 .content-call{
     width: 690px;
 }
-.content-call__start{
-    bottom: 5px;
-}
 .content-call__img{
     width: 20px;
     padding-left: 17px;
     padding-right: 12px;
 }
-.content-call__number{
-    font-size: 2.4rem;
-}
 .content-call__txt{
     margin: 0 40px;
-}
-.content-call__button{
-    width: 240px;
-    height: 60px;
-    border: 1px solid #57AB27;
-    border-radius: 2px;
-    box-shadow: 0px 15px 40px rgba(15, 54, 1, 0.3);
 }
 .goods{
     flex: 0 0 410px;
@@ -200,6 +191,23 @@
 .calculator-enter{
     margin: 0;
     margin-right: 50px;
+    padding-right: 55px;
+    padding-bottom: 45px;
+}
+.calculator-enter-block{
+    margin-top: 15px;
+}
+.calculator-enter-block:nth-child(n+6) .calculator-enter-block__name{
+    padding-bottom: 3px;
+}
+.calculator-enter-block-field__icon{
+    vertical-align: -2px;
+}
+.calculator-enter-block_last:last-child{
+    margin-top: 30px;
+}
+.calculator-enter-block_last{
+    margin-top: 25px;
 }
 .delivery-inside{
     padding-left: 40px;
@@ -207,9 +215,12 @@
 .delivery__title{
     margin-top: 70px;
 }
-.delivery-map{
-    width: calc(99% - ((100% - 1250px)/2));
-    left: calc((100% - 1250px)/2);
+#map .map-gradient{
+    z-index: 1;
+    left: 0;
+    height: 100%;
+    width: calc(616px + (100% - 1290px)/2);
+    background: linear-gradient(90deg, #FFFFFF 26.62%, rgba(255, 255, 255, 0) 85.13%);
 }
 .reviews__title{
     margin-bottom: 40px;
