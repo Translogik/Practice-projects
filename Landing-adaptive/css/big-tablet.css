@@ -1,0 +1,248 @@
+body{
+    font-size: 1.6rem;
+}
+.logo{
+    width: auto;
+}
+.menu__item{
+    display: block;
+}
+.menu-mob__icon{
+    display: none;
+}
+.first-screen__title{
+    width: 570px;
+}
+.table-cell{
+    font-size: 1.8rem;
+}
+.content__title{
+    width: 300px;
+    display: inline-block;
+}
+.content-call{
+    display: block;
+    margin-left: auto;
+}
+.content-call__start{
+    bottom: 5px;
+}
+.content-call__img{
+    width: 20px;
+    padding-left: 10px;
+    padding-right: 6px;
+}
+.content-call__number{
+    font-size: 2.4rem;
+}
+.content-call__txt{
+    margin: 0 15px;
+}
+.content-call__button{
+    width: 240px;
+    height: 60px;
+    border: 1px solid #57AB27;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0);
+    text-shadow: 0px 10px 20px rgba(15, 54, 1, 0.3);
+}
+.goods{
+    margin-top: 120px;
+}
+.calculator{
+    background: #57AB27 url(../images/Back-2.jpg) center/cover;
+}
+.calculator-inside{
+    flex-direction: row;
+    align-content: center;
+}
+.calculator__title{
+    margin-bottom: 50px;
+}
+.calculator-enter{
+    width: 495px;
+    height: 510px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.calculator-enter-block{
+    display: flex;
+    align-items: center;
+}
+.calculator-enter-block:first-child{
+    margin: 0;
+    font-size: 1.5rem;
+}
+.calculator-enter-block-field{
+    margin-left: auto;
+}
+.calculator-enter-block-field__input{
+    box-sizing: border-box;
+    width: 190px;
+}
+.calculator-enter-block-field__measure{
+    left: 155px;
+}
+.calculator-enter-block-field__icon{
+    margin-right: 15px;
+}
+.calculator-enter-block-field_button{
+    margin-right: 87px;
+}
+.calculator-enter-block_last{
+    margin-right: 0;
+}
+.calculator-result{
+    width: 495px;
+    height: 510px;
+    margin-left: 10px;
+}
+.calculator-result__title{
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.calculator-result-content{
+    font-size: 1.8rem;
+    line-height: 1.5;
+    width: 395px;
+}
+.calculator-result-total{
+    width: 425px;
+    height: 120px;
+    box-sizing: border-box;
+    flex-direction: row;
+    margin-top: 22px;
+}
+.calculator-result-total__button{
+    margin-left: auto;
+}
+.calculator-result-total-content{
+    flex-direction: column;
+    margin: 5px;
+}
+.calculator-result-total-content__description{
+    font-size: 1.8rem;
+}
+.calculator-result-total-content__numbers{
+    font-size: 3rem;
+}
+.delivery-inside{
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    height: 724px;
+}
+.delivery__title{
+    padding-left: 0;
+    margin-top: 40px;
+}
+.delivery__description{
+    width: 435px;
+    padding: 40px 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.delivery-contacts{
+    width: 410px;
+    height: 333px;
+    border-radius: 3px;
+    box-shadow: 0px 15px 30px rgba(25, 26, 28, 0.05);
+    padding: 40px;
+    font-size: 2.4rem;
+    box-sizing: border-box;
+}
+.delivery-contacts__img{
+    display: none;
+}
+.delivery-contacts__img-desk{
+    display: block;
+    top: 29px;
+    left: -115px;
+}
+.delivery-contacts-location__interlineation{
+    display: block;
+    opacity: 0.5;
+}
+.delivery-contacts-location, .delivery-contacts-tel, .delivery-contacts__button{
+    margin-left: 75px;
+}
+.delivery-contacts__icon{
+    width: 20px;
+    left: 0;
+}
+.delivery-contacts__icon img{
+    width: 20px;
+}
+.delivery-contacts__icon_place{
+    top: 25px;
+}
+.delivery-contacts__button{
+    width: 255px;
+}
+.delivery-inside *:not(.delivery-map){
+    z-index: 2;
+}
+.delivery-map{
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+.reviews-inside{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    padding-right: 0;
+}
+.reviews__title{
+    margin: 30px 0;
+    width: 100%;
+}
+.reviews-content{
+    flex: 1 1 410px;
+    margin-right: 30px;
+}
+.feedback{
+    background: linear-gradient(90deg, rgba(43, 98, 24, 0) 34%, rgba(75, 146, 35, .66) 86%), url(../images/back-3.png) center/cover;
+}
+.feedback-inside{
+    padding: 90px;
+    min-height: 688px;
+}
+footer .menu__item{
+    margin-right: 15px;
+}
+@media(min-width: 1080px){
+    footer .menu__item{
+        margin-right: 25px;
+    }
+}
+.footer-shell{
+    display: flex;
+    height: 164px;
+    align-items: center;
+}
+.menubar_footer{
+    display: block;
+}
+.social{
+    padding: 0;
+    margin-left: auto;
+}
+.info{
+    display: flex;
+    align-items: center;
+    padding: 50px 10px;
+}
+.info-logo{
+    padding: 0;
+    flex: 0 0 200px;
+    margin-right: 40px;
+}
+.info__txt{
+    padding: 0;
+}
+.footer__line::before{
+    width: 142px;
+}

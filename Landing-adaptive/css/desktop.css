@@ -1,0 +1,250 @@
+.wrapper{
+    max-width: 1290px;
+    margin: auto;
+    overflow: visible;
+}
+.circle-call{
+    display: none;
+}
+.location{
+    display: block;
+    font-size: 1.4rem;
+    padding-left: 60px;
+    margin-right: 40px;
+}
+.location__circle{
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    background: #F0F2F6;
+    left: 0;
+}
+.location__img{
+    top: 12px;
+    left: 13px;
+}
+.location__city{
+    margin-top: 5px;
+}
+.phone{
+    display: block;
+    padding-left: 83px;
+}
+.phone__circle-white{
+    width: 27px;
+    height: 27px;
+    box-shadow: 0px 5px 15px rgba(25, 26, 28, 0.14);
+    border-radius: 100%;
+    left: 0;
+    top: 8px;
+    background: white;
+}
+.phone__img{
+    width: 8px;
+    top: 11px;
+    left: 9px;
+}
+.phone__circle{
+    width: 44px;
+    height: 44px;
+    background: #57AB27;
+    border-radius: 100%;
+    left: 21px;
+}
+.phone__icon{
+    width: 19px;
+    top: 12px;
+    left: 13px;
+}
+.phone__timetable{
+    margin-top: 5px;
+    font-size: 1.4rem;
+}
+.first-screen{
+    background: url(../images/Rectangle\ 8.png) left 0 bottom 0/contain no-repeat, url(../images/tree.png) right 0/contain no-repeat, url("../images/Back-1.jpg") 50% 50%/cover;
+}
+.first-screen-inside{
+    display: block;
+}
+.first-screen__title{
+    margin-top: 20px;
+}
+.action{
+    margin-top: 43px;
+}
+.gain{
+    position: absolute;
+    right: 110px;
+    bottom: -40px;
+    font-size: 2.8rem;
+    width: 321px;
+}
+.bonus{
+    left: -500px;
+    top: -20px;
+}
+.small{
+    font-size: 1.5rem;
+}
+.advantage{
+    margin-top: 0;
+    margin-left: 0;
+}
+.advantage-item:nth-child(2), .advantage-item:nth-child(6){
+    margin-left: 0;
+}
+.advantage-inside{
+    margin-bottom: 50px;
+}
+.advantage-inside h1{
+    margin-left: 0;
+}
+.content-advantage__title{
+    margin-top: 35px;
+}
+.content-advantage-inside{
+    padding-bottom: 75px;
+}
+.table-line{
+    height: 90px;
+    margin-bottom: 5px;
+}
+.table-cell:first-child{
+    padding-left: 120px;
+}
+.table-line_last{
+    height: 104px;
+    margin-bottom: 0;
+}
+.table-line_last .table-cell{
+    font-size: 2.2rem;
+}
+.table-line_last .table-cell:nth-child(3){
+    font-size: 1.6rem;
+}
+.table-cell__img_last{
+    width: 196px;
+    height: 92px;
+    left: -85px;
+    top: 6px;
+}
+.content-inside{
+    padding-top: 90px;
+    padding-bottom: 75px;
+}
+.content__title{
+    width: calc(100% - 700px);
+}
+.content-call{
+    width: 690px;
+}
+.content-call__img{
+    width: 20px;
+    padding-left: 17px;
+    padding-right: 12px;
+}
+.content-call__txt{
+    margin: 0 40px;
+}
+.goods{
+    flex: 0 0 410px;
+    height: 498px;
+    padding: 50px;
+}
+.goods:last-child{
+    margin-right: 0;
+}
+.goods__img{
+    left: 50px;
+    top: -70px;
+}
+.goods__name{
+    font-size: 2.4rem;
+    margin-top: 50px;
+}
+.goods__size{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+.goods-table-line{
+    font-size: 1.8rem;
+}
+.goods-table-line_first .goods-table-line_cell:first-child{
+    text-decoration: line-through;
+}
+.goods-table-line_first .goods-table-line_cell{
+    font-size: 1.6rem;
+}
+[class="goods-table-line_cell green"]{
+    font-size: 2.4rem;
+}
+.button-order{
+    height: 60px;
+}
+.button-order__img{
+    bottom: 23px;
+}
+.calculator-inside{
+    padding-top: 75px;
+    padding-bottom: 95px;
+}
+.calculator-enter{
+    margin: 0;
+    margin-right: 50px;
+    padding-right: 55px;
+    padding-bottom: 45px;
+}
+.calculator-enter-block{
+    margin-top: 15px;
+}
+.calculator-enter-block:nth-child(n+6) .calculator-enter-block__name{
+    padding-bottom: 3px;
+}
+.calculator-enter-block-field__icon{
+    vertical-align: -2px;
+}
+.calculator-enter-block_last:last-child{
+    margin-top: 30px;
+}
+.calculator-enter-block_last{
+    margin-top: 25px;
+}
+.delivery-inside{
+    padding-left: 40px;
+}
+.delivery__title{
+    margin-top: 70px;
+}
+#map .map-gradient{
+    z-index: 1;
+    left: 0;
+    height: 100%;
+    width: calc(616px + (100% - 1290px)/2);
+    background: linear-gradient(90deg, #FFFFFF 26.62%, rgba(255, 255, 255, 0) 85.13%);
+}
+.reviews__title{
+    margin-bottom: 40px;
+}
+.reviews-content{
+    flex: 0 0 320px;
+    height: 343px;
+    padding: 40px;
+}
+.reviews-content-caption{
+    position: absolute;
+    bottom: 40px;
+}
+.reviews-content-caption__photo{
+    left: 0px;
+    bottom: -10px;
+}
+.feedback-shell{
+    margin-right: 0;
+}
+.footer{
+    font-size: 1.5rem;
+}
+.info-logo{
+    font-size: 3.5rem;
+    margin-right: 90px;
+}
