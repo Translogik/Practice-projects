@@ -1,4 +1,4 @@
-﻿# Пет-проекты.
+﻿# Пет-проекты. [Просмотр](https://translogik.github.io/Practice-projects/)
 
 ## Мой второй пет-проект.
 
